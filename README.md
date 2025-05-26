@@ -9,7 +9,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/mingji/SignLLM?style=social)](https://github.com/mingji/SignLLM/network/members)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[![Last Update](https://img.shields.io/badge/Last%20Update-2025--01-green.svg)](https://github.com/mingji/SignLLM)
+[![Last Update](https://img.shields.io/badge/Last%20Update-2025--05-green.svg)](https://github.com/mingji/SignLLM)
 [![Papers](https://img.shields.io/badge/Papers-150+-blue.svg)](https://github.com/mingji/SignLLM)
 [![Datasets](https://img.shields.io/badge/Datasets-30+-orange.svg)](https://github.com/mingji/SignLLM)
 [![Survey](https://img.shields.io/badge/Survey-Sign_Language-red.svg)](https://github.com/mingji/SignLLM)
