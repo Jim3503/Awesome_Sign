@@ -1,5 +1,25 @@
-<!-- # Awesome_Sign[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) -->
-<!-- [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/Chen-Yang-Liu/RS-Temporal-VLM/pulls) -->
+<div align="center">
+
+# 🤟 Awesome Sign Language [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+**A Comprehensive Collection of Sign Language Research Papers, Datasets, and Resources**
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/mingji/SignLLM/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/mingji/SignLLM?style=social)](https://github.com/mingji/SignLLM/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/mingji/SignLLM?style=social)](https://github.com/mingji/SignLLM/network/members)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+[![Last Update](https://img.shields.io/badge/Last%20Update-2025--01-green.svg)](https://github.com/mingji/SignLLM)
+[![Papers](https://img.shields.io/badge/Papers-150+-blue.svg)](https://github.com/mingji/SignLLM)
+[![Datasets](https://img.shields.io/badge/Datasets-30+-orange.svg)](https://github.com/mingji/SignLLM)
+[![Survey](https://img.shields.io/badge/Survey-Sign_Language-red.svg)](https://github.com/mingji/SignLLM)
+
+---
+
+*🌟 "From Recognition to Understanding: Bridging the Gap Between Sign Language and AI" 🌟*
+
+</div>
+
 <br />
 <p align="center">
   <h1 align="center">Sign Language: A Comprehensive Survey</h1>
