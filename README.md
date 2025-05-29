@@ -247,7 +247,7 @@ Timeline of Sign Language works:
 
 |   Time   |    Method    | Paper Title                                                                                                                                                                 |        Visual Encoder         |     LLM     |    Fine-tuning    |                     Code/Project                      |
 |:--------:|:------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----------:|:-----------------:|:-----------------------------------------------------:|
-| 2023.12  | SignBERT+ | [SignBERT+: Hand-Model-Aware Self-Supervised Pre-training for Sign Language Understanding](https://ieeexplore.ieee.org/document/10130338) (TPAMI) | Hand-aware CNN | BERT | Self-supervised | [link](https://github.com/YinAoXiong/SLRT_FET) |
+| 2023.12  |   SignBERT+     | [SignBERT+: Hand-Model-Aware Self-Supervised Pre-training for Sign Language Understanding](https://www.computer.org/csdl/journal/tp/2023/09/10109128/1MESMCioCQM) (TPAMI)                                           |      BERT-like      | Recognition + Translation | [link](https://github.com/joshuasv/signbert_unofficial?tab=readme-ov-file) |
 | 2025.02  |  Uni-Sign  | [Uni-Sign: A Unified Framework for Sign Language Understanding](https://openreview.net/forum?id=hJlK0jM4tP) (ICLR) | Unified Encoder | GPT-like | Multi-task | [link](https://github.com/Uni-Sign/Uni-Sign) |
 | 2024.12  | Multimodal-Pretraining | [Scaling Up Multimodal Pretraining for Sign Language Understanding](https://arxiv.org/abs/2412.05671) (arXiv) | Multimodal | Large Scale | Cross-domain | N/A |
 
