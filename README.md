@@ -306,7 +306,6 @@ Timeline of Sign Language works:
 ### Retrieval Tasks <a id="Dataset_5"></a>
 | **Dataset** | **Language** | **Size** | **Query Type** | **Target Type** | **Data Source** | **Anno.** | **Link** |
 |-------------|-------------|----------|----------------|-----------------|-----------------|-----------|---------|
-| CiCo-Dataset | Multiple | 8K videos | Text | Video | Multiple sources | Manual | [Link](https://github.com/FangyunWei/SLRT) |
 | SEDS-Dataset | ASL/BSL | 15K videos | Text | Video | How2Sign, BOBSL | Manual | N/A |
 | Free-text SLVR | ASL | 7K videos | Free text | Video | WLASL, MSASL | Manual | [Link](https://github.com/AmandaDuarte/sign-language-retrieval) |
 
