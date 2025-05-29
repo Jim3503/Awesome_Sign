@@ -300,14 +300,13 @@ Timeline of Sign Language works:
 |   Dataset   | Purpose | Size | Input Type | Output Type | **Data Source** | **Anno.** | **Link** |
 |:-----------:|:-------:|:----:|:----------:|:-----------:|:---------------:|:---------:|:--------:|
 |  SignAvatars | Generation | 8K videos | Text/Gloss | Video | Synthetic | Auto | [link](https://github.com/ZhengdiYu/SignAvatars) |
-|  T2S-GPT（PHOENIX-News）    | Generation | Phoenix subset | Text | Pose sequence | Phoenix-2014T | Manual | [Link](https://github.com/Atthewmay/T2S-GPT) |
+|  T2S-GPT（PHOENIX-News）    | Generation | Phoenix subset | Text | Pose sequence | Phoenix-2014T | Manual | [Link](https://t2sgpt-demo.yinaoxiong.cn/) |
 
 
 ### Retrieval Tasks <a id="Dataset_5"></a>
 | **Dataset** | **Language** | **Size** | **Query Type** | **Target Type** | **Data Source** | **Anno.** | **Link** |
 |-------------|-------------|----------|----------------|-----------------|-----------------|-----------|---------|
-| SEDS-Dataset | ASL/BSL | 15K videos | Text | Video | How2Sign, BOBSL | Manual | N/A |
-| Free-text SLVR | ASL | 7K videos | Free text | Video | WLASL, MSASL | Manual | [Link](https://github.com/AmandaDuarte/sign-language-retrieval) |
+
 
 ### Unified Understanding <a id="Dataset_6"></a>
 | **Dataset** | **Language** | **Tasks** | **Size** | **Modality** | **Data Source** | **Anno.** | **Link** |
