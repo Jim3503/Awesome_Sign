@@ -311,8 +311,8 @@ Timeline of Sign Language works:
 ### Unified Understanding <a id="Dataset_6"></a>
 | **Dataset** | **Language** | **Tasks** | **Size** | **Modality** | **Data Source** | **Anno.** | **Link** |
 |-------------|-------------|-----------|----------|--------------|-----------------|-----------|---------|
-| Uni-Sign Dataset | Multiple | Rec+Trans+Retr | 100K videos | RGB+Pose | Multiple | Manual | [Link](https://github.com/Uni-Sign/Uni-Sign) |
-| SignBERT+ Dataset | ASL/BSL | Recognition+Translation | 50K videos | RGB+Hand | Multiple | Manual | [Link](https://github.com/YinAoXiong/SLRT_FET) |
+| Uni-Sign Dataset(CSL News) | Multiple | Rec+Trans+Retr | 100K videos | RGB+Pose | Multiple | Manual | [Link](https://github.com/ZechengLi19/Uni-Sign) |
+| SignBERT+ Dataset | ASL/BSL | Recognition+Translation | 50K videos | RGB+Hand | Multiple | Manual | [Link](https://arxiv.org/pdf/2305.04868v1) |
 
 ## 💻 Others <a id="Others"></a>
 
