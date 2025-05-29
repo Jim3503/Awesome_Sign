@@ -266,21 +266,21 @@ Timeline of Sign Language works:
 |  WLASL      | ASL      | 21K videos | 2,000 words | Variable | Various sources | Manual | [Link](https://github.com/dxli94/WLASL) |
 |  MSASL      | ASL      | 25K videos | 1,000 words | Variable | MS Kinect | Manual | [Link](https://www.microsoft.com/en-us/research/project/ms-asl/) |
 |  NMFs-CSL   | CSL      | 25K videos | 1,067 words | Variable | Studio recorded | Manual | [Link](https://ustc-slr.github.io/datasets/) |
-|  SLR500     | CSL      | 125K videos | 500 words | 1280×720 | Various | Manual | [Link](https://ustc-slr.github.io/datasets/2021_slr500.html) |
+|  SLR500     | CSL      | 125K videos | 500 words | 1280×720 | Various | Manual | [Link](https://ustc-slr.github.io/datasets/) |
 |  ASL Citizen| ASL      | 84K videos | 2,731 words | Variable | Crowdsourced | Manual | [Link](https://www.microsoft.com/en-us/research/project/asl-citizen/) |
 |  Slovo      | RSL      | 20K videos | 1,000 words | 1920×1080 | Studio recorded | Manual | [Link](https://github.com/hukenovs/slovo) |
 |  GSL        | GSL      | 40K videos | 310 words | Variable | Various | Manual | [Link](https://vcl.iti.gr/dataset/gsl/) |
 |  BOBSL      | BSL      | 1.2M videos | 61K words | Variable | TV broadcasts | Auto+Manual | [Link](https://www.robots.ox.ac.uk/~vgg/data/bobsl/) |
-|  Auslan-Daily| Auslan  | 3K videos | 2.7K words | 1920×1080 | Daily conversation | Manual | [Link](https://github.com/nlp-uit/auslan-daily-dataset) |
+|  Auslan-Daily| Auslan  | 3K videos | 2.7K words | 1920×1080 | Daily conversation | Manual | [Link](https://uq-cvlab.github.io/Auslan-Daily-Dataset/) |
 
 ### Continuous Recognition <a id="Dataset_2"></a>
 |   Dataset   | Language | Size | Vocabulary | Avg Length | **Data Source** | **Anno.** | **Link** |
 |:-----------:|:--------:|:----:|:----------:|:----------:|:---------------:|:---------:|:--------:|
 |  Phoenix-2014| GSL     | 6.8K videos | 1,232 words | 3.2 sentences | Weather broadcast | Manual | [Link](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
 |  Phoenix-2014T| GSL    | 8.2K videos | 1,232 words | 3.2 sentences | Weather broadcast | Manual | [Link](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
-|  CSL-Daily  | CSL      | 20.6K videos | 2K words | 5.4 sentences | Daily conversation | Manual | [Link](https://ustc-slr.github.io/datasets/2021_csl_daily.html) |
+|  CSL-Daily  | CSL      | 20.6K videos | 2K words | 5.4 sentences | Daily conversation | Manual | [Link](https://ustc-slr.github.io/datasets/) |
 |  GSL        | GSL      | 10.3K videos | 310 words | Variable | Various | Manual | [Link](https://vcl.iti.gr/dataset/gsl/) |
-|  TVB-HKSL-News| HKSL   | 16.1K videos | 3K words | Variable | TV news | Manual | [Link](https://visal.cs.cityu.edu.hk/research/tvb-hksl-news/) |
+|  TVB-HKSL-News| HKSL   | 16.1K videos | 3K words | Variable | TV news | Manual | N/A |
 
 ### Translation Tasks <a id="Dataset_3"></a>
 |   Dataset   | Language | Size | Vocabulary | Modality | **Data Source** | **Anno.** | **Link** |
@@ -288,8 +288,8 @@ Timeline of Sign Language works:
 |  How2Sign   | ASL      | 80 hours | 16K words | RGB+3D | YouTube | Manual | [Link](https://how2sign.github.io/) |
 |  OpenASL    | ASL      | 288 hours | 22K words | RGB | Various | Manual | [Link](https://github.com/chevalierNoir/OpenASL) |
 |  BOBSL      | BSL      | 1.2M videos | 61K words | RGB | TV broadcasts | Manual | [Link](https://www.robots.ox.ac.uk/~vgg/data/bobsl/) |
-|  Auslan-Daily| Auslan  | 14K videos | 2.7K words | RGB | Daily conversation | Manual | [Link](https://github.com/nlp-uit/auslan-daily-dataset) |
-|  YouTube-ASL| ASL      | 984 hours | 11K words | RGB | YouTube | Auto+Manual | [Link](https://github.com/google-research/youtube-asl) |
+|  Auslan-Daily| Auslan  | 14K videos | 2.7K words | RGB | Daily conversation | Manual | [Link](https://uq-cvlab.github.io/Auslan-Daily-Dataset/) |
+|  YouTube-ASL| ASL      | 984 hours | 11K words | RGB | YouTube | Auto+Manual | [Link](https://github.com/google-research/google-research/tree/master/youtube_asl) |
 |  LSA-T      | LSA      | 14.9K videos | 3K words | RGB | YouTube | Manual | [Link](https://github.com/midusi/LSA-T) |
 |  SignBank+  | Multiple | 10K videos | 8K words | SignWriting | Various | Manual | [Link](https://github.com/sign-language-processing/signbank-plus) |
 |  VECSL      | CSL      | 15.7K videos | 2.6K words | RGB+Event | DVS346 | Manual | [Link](https://github.com/Event-AHU/OpenESL) |
