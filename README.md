@@ -295,6 +295,7 @@ Timeline of Sign Language works:
 |  LSA-T      | LSA      | 14.9K videos | 3K words | RGB | YouTube | Manual | [Link](https://github.com/midusi/LSA-T) |
 |  SignBank+  | Multiple | 10K videos | 8K words | SignWriting | Various | Manual | [Link](https://github.com/sign-language-processing/signbank-plus) |
 |  VECSL      | CSL      | 15.7K videos | 2.6K words | RGB+Event | DVS346 | Manual | [Link](https://github.com/Event-AHU/OpenESL) |
+|  Event-SLT  | CSL      | 20K videos | 3K words | RGB+Event | DVS346 | Manual | [Link](https://github.com/Event-AHU/Event-SLT) |
 
 ### Video production <a id="Dataset_4"></a>
 |   Dataset   | Purpose | Size | Input Type | Output Type | **Data Source** | **Anno.** | **Link** |
