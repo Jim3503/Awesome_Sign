@@ -299,7 +299,7 @@ Timeline of Sign Language works:
 ### Video production <a id="Dataset_4"></a>
 |   Dataset   | Purpose | Size | Input Type | Output Type | **Data Source** | **Anno.** | **Link** |
 |:-----------:|:-------:|:----:|:----------:|:-----------:|:---------------:|:---------:|:--------:|
-|  SignAvatar | Generation | 8K videos | Text/Gloss | Video | Synthetic | Auto | N/A |
+|  SignAvatars | Generation | 8K videos | Text/Gloss | Video | Synthetic | Auto | [link](https://github.com/ZhengdiYu/SignAvatars) |
 |  T2S-GPT（PHOENIX-News）    | Generation | Phoenix subset | Text | Pose sequence | Phoenix-2014T | Manual | [Link](https://github.com/Atthewmay/T2S-GPT) |
 
 
