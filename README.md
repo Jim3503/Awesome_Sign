@@ -238,10 +238,10 @@ Timeline of Sign Language works:
 ### LLM-driven Gloss-free Translation
 |   Time   |   Method    | Paper Title                                                                                                                                                                            |      Visual Encoder      |     LLM     |  Fine-tuning  |                      Code/Project                      |
 |:--------:|:-----------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------:|:-----------:|:-------------:|:------------------------------------------------------:|
-| 2024.02  |  Sign2GPT   | [Sign2GPT: Leveraging Large Language Models for Gloss-free Sign Language Translation](https://arxiv.org/abs/2405.18387) (arXiv)                                                              | Video CNN | GPT | Prompt Tuning | N/A |
-| 2024.06  | LLMs-Good-SL| [LLMs are Good Sign Language Translators](https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_LLMs_are_Good_Sign_Language_Translators_CVPR_2024_paper.pdf) (CVPR)                   | ViT | LLaMA/GPT | LoRA | [link](https://github.com/IDEA-Research/SignLLM) |
-| 2024.09  | Visual-Align| [Visual Alignment Pretraining for Sign Language Translation](https://arxiv.org/abs/2409.04402) (ECCV)                                                                                        | CLIP | Transformer | Frozen | N/A |
-| 2024.10  |Factorized-LLM| [Factorized Learning Assisted by Large Language Model for Gloss-free Sign Language Translation](https://aclanthology.org/2024.lrec-main.1008/) (LREC-COLING)                                       | CNN | LLM | Adapter | N/A |
+| 2024.02  |  Sign2GPT   | [Sign2GPT: Leveraging Large Language Models for Gloss-free Sign Language Translation](https://arxiv.org/abs/2405.04164) (arXiv)                                                              | Video CNN | GPT | Prompt Tuning | N/A |
+| 2024.06  | LLMs-Good-SL| [LLMs are Good Sign Language Translators](https://arxiv.org/abs/2404.00925) (CVPR)                   | ViT | LLaMA/GPT | LoRA | N/A |
+| 2024.09  | Visual-Align| [Visual Alignment Pretraining for Sign Language Translation](https://eccv.ecva.net/virtual/2024/poster/737) (ECCV)                                                                                        | CLIP | Transformer | Frozen | N/A |
+| 2024.10  |Factorized-LLM| [Factorized Learning Assisted by Large Language Model for Gloss-free Sign Language Translation](https://aclanthology.org/2024.lrec-main.620/) (LREC-COLING)                                       | CNN | LLM | Adapter | N/A |
 
 ### Unified Sign Language Foundation Models
 
