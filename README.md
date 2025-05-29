@@ -139,7 +139,7 @@ Timeline of Sign Language works:
 |:--------:|:---------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------:|:-----------------------:|:--------------------------------------------------:|
 | 2014.09  |    CNN-HMM      | [Deep Sign: Hybrid CNN-HMM for Continuous Sign Language Recognition](https://openresearch.surrey.ac.uk/esploro/outputs/conferencePresentation/Deep-Sign-Hybrid-CNN-HMM-for-Continuous/99511412402346) (BMVC) | CNN | HMM | N/A |
 | 2015.12  |   HMM-based     | [Continuous Sign Language Recognition: Towards Large Vocabulary Statistical Recognition Systems Handling Multiple Signers](https://www.sciencedirect.com/science/article/pii/S1077314215002088) (CVIU) | Hand-crafted Features | HMM | N/A |
-| 2017.04  |   Hand-Action   | [First-Person Hand Action Benchmark with RGB-D Videos and 3D Hand Pose Annotations](https://arxiv.org/abs/1704.02463) (CVPR)                                                               |     RGB-D+Pose       |         CTC             |                        N/A                         |
+| 2017.04  |   Hand-Action   | [First-Person Hand Action Benchmark with RGB-D Videosnd 3D Hand Pose Annotations](https://arxiv.org/abs/1704.02463) (CVPR)                                                               |     RGB-D+Pose       |         CTC             |                        N/A                         |
 | 2017.10  |   Egocentric    | [Egocentric Gesture Recognition Using Recurrent 3D Convolutional Neural Networks with Spatiotemporal Transformer Modules](https://ieeexplore.ieee.org/document/8237668/) (ICCV)           |      3D CNN           |    Spatiotemporal       |                        N/A                         |
 | 2018.04  |     SubUNets    | [SubUNets: End-to-end Hand Shape and Continuous Sign Language Recognition](https://openaccess.thecvf.com/content_iccv_2017/html/Camgoz_SubUNets_End-To-End_Hand_ICCV_2017_paper.html) (ICCV)|      CNN              |        CTC              |                        N/A                         |
 | 2018.09  |   CNN-LSTM      | [Neural Sign Language Translation](https://openaccess.thecvf.com/content_cvpr_2018/papers/Camgoz_Neural_Sign_Language_CVPR_2018_paper.pdf) (CVPR)                                          |        CNN            |         LSTM            |                        N/A                         |
@@ -154,6 +154,8 @@ Timeline of Sign Language works:
 | 2023.06  |    C2SLR        | [C2SLR: Consistency-enhanced Continuous Sign Language Recognition](https://openaccess.thecvf.com/content/CVPR2023/papers/Zuo_C2SLR_Consistency-Enhanced_Continuous_Sign_Language_Recognition_CVPR_2023_paper.pdf) (CVPR) | ResNet | Consistency Learning | N/A |
 | 2024.02  |   TLP-CTC       | [Temporal Lift Pooling for Continuous Sign Language Recognition](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136950506.pdf) (ECCV)                                                                                    |      ResNet           |    Temporal Pooling     |                        [link](https://github.com/hulianyuyy/Temporal-Lift-Pooling)                         |
 | 2024.05  |    SMKD         | [Self-Mutual Distillation Learning for Continuous Sign Language Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Hao_Self-Mutual_Distillation_Learning_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.pdf) (ICCV)                                                                      |      ResNet           |  Knowledge Distillation |                        N/A                         |
+| 2024.06  |  AdaBrowse      | [AdaBrowse: Adaptive Video Browser for Efficient Continuous Sign Language Recognition](https://dl.acm.org/doi/10.1145/3581783.3612269) (ACMMM)                                             |      CNN              |  Adaptive Browsing     |                        N/A                         |
+| 2024.08  |  Topic-Detection| [Topic Detection in Continuous Sign Language Videos](https://arxiv.org/abs/2408.15033) (arXiv)                                                                                               |      ResNet           |  Topic Modeling        |                        N/A                         |
 
 ### Sign Language Translation
 |   Time   |   Model Name    | Paper Title                                                                                                                                                                            |    Visual Encoder     |         Language Model         |                    Code/Project                    |    
@@ -294,12 +296,12 @@ Timeline of Sign Language works:
 |  SignBank+  | Multiple | 10K videos | 8K words | SignWriting | Various | Manual | [Link](https://github.com/sign-language-processing/signbank-plus) |
 |  VECSL      | CSL      | 15.7K videos | 2.6K words | RGB+Event | DVS346 | Manual | [Link](https://github.com/Event-AHU/OpenESL) |
 
-### Video Generation <a id="Dataset_4"></a>
+### Video production <a id="Dataset_4"></a>
 |   Dataset   | Purpose | Size | Input Type | Output Type | **Data Source** | **Anno.** | **Link** |
 |:-----------:|:-------:|:----:|:----------:|:-----------:|:---------------:|:---------:|:--------:|
-|  SignAvatar | Generation | 8K videos | Text/Gloss | Video | Synthetic | Auto | [Link](https://github.com/ZhangChen1998/SignAvatar) |
-|  T2S-GPT    | Generation | Phoenix subset | Text | Pose sequence | Phoenix-2014T | Manual | [Link](https://github.com/Atthewmay/T2S-GPT) |
-|  SignGen    | Generation | Phoenix subset | Text | Video | Phoenix-2014T | Manual | N/A |
+|  SignAvatar | Generation | 8K videos | Text/Gloss | Video | Synthetic | Auto | N/A |
+|  T2S-GPT（PHOENIX-News）    | Generation | Phoenix subset | Text | Pose sequence | Phoenix-2014T | Manual | [Link](https://github.com/Atthewmay/T2S-GPT) |
+
 
 ### Retrieval Tasks <a id="Dataset_5"></a>
 | **Dataset** | **Language** | **Size** | **Query Type** | **Target Type** | **Data Source** | **Anno.** | **Link** |
