@@ -315,6 +315,44 @@ Timeline of Sign Language works:
 | Uni-Sign Dataset(CSL News) | Multiple | Rec+Trans+Retr | 100K videos | RGB+Pose | Multiple | Manual | [Link](https://github.com/ZechengLi19/Uni-Sign) |
 | SignBERT+ Dataset | ASL/BSL | Recognition+Translation | 50K videos | RGB+Hand | Multiple | Manual | [Link](https://arxiv.org/pdf/2305.04868v1) |
 
+
+### 📋 Additional Major Sign Language Datasets
+
+| Dataset Name         | Language         | Type                | Vocabulary Size      | Number of Videos     | Number of Signers   |
+|:--------------------:|:----------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+| Boston ASLLVD        | ASL              | Isolated words      | 2,742               | 9,794               | 6                   |
+| AUSLAN               | Auslan           | Isolated words      | 1,000               | 1,100               | 6                   |
+| BSL Corpus           | BSL              | Isolated words      | 5,000               | —                   | 100                 |
+| PSL Kinect           | Polish SL        | Isolated words      | 30                  | 300                 | 6                   |
+| DEVISIGN-G/D/L       | CSL              | Isolated words      | 36/500/2,000        | 300/2,000/4,000     | 8/8/8               |
+| LSE-sign             | Argentinian SL   | Isolated words      | 2,400               | 24,400              | 6                   |
+| LSA64                | Argentinian SL   | Isolated words      | 64                  | 3,200               | 10                  |
+| USTC-ICSL            | CSL              | Isolated words      | 500                 | —                   | 50                  |
+| DISFA                | German SL        | Isolated words      | 30                  | 300                 | 6                   |
+| SMILE                | German SL        | Isolated words      | 1,000               | 32,000              | 10                  |
+| MS-ASL               | ASL              | Isolated words      | 1,000               | 25,513              | 222                 |
+| WLASL                | ASL              | Isolated words      | 2,000               | 21,083              | 119                 |
+| BosphorusSign22k     | Turkish SL       | Isolated words      | 744                 | 22,542              | 6                   |
+| AUTSL                | Turkish SL       | Isolated words      | 226                 | 36,328              | 43                  |
+| CSSL5000             | CSL              | Isolated words      | 1,000               | 100,000             | 50                  |
+| BSL-1K               | BSL              | Isolated words      | 1,000               | 1,000               | 10                  |
+| INCLUDE              | CSL              | Isolated words      | 263                 | 4,287               | 7                   |
+| NMFs-CSL             | CSL              | Isolated words      | 1,067               | 32,000              | 10                  |
+| WLASL-LEX            | ASL              | Isolated words      | 800                 | 10,017              | 119                 |
+| Boston-104           | ASL              | Continuous sentences| 128                 | 214                 | 6                   |
+| SIGNUM               | German SL        | Continuous sentences| 455                 | 1,230               | 25                  |
+| S-pot                | Finnish SL       | Continuous sentences| —                   | 5,359               | 5                   |
+| RWTH-PHOENIX-WEATHER-2014 | German SL   | Continuous sentences| 1,081               | 6,841               | 50                  |
+| USTC-CCSL            | CSL              | Continuous sentences| 1,176               | 25,000              | 50                  |
+| RWTH-PHOENIX-WEATHER-2014T| German SL   | Continuous sentences| 1,068               | 6,257               | 9                   |
+| RCSD                 | CSL              | Continuous sentences| 242                 | 4,162               | 10                  |
+| KETI                 | Korean SL        | Continuous sentences| 419                 | 14,672              | 14                  |
+| GSL                  | Greek SL         | Continuous sentences| 310                 | 10,290              | 7                   |
+| MEDIAPI-SKEL corpus  | BSL              | Continuous sentences| 14,383              | 36,859              | >100                |
+| How2sign             | ASL              | Continuous sentences| 16,000              | 60,000              | 11                  |
+| CSL-Daily            | CSL              | Continuous sentences| 2,000               | 20,654              | 10                  |
+
+
 ## 💻 Others <a id="Others"></a>
 
 ### Pose Estimation for Sign Language
@@ -401,4 +439,6 @@ If you have suggestions for improvements or want to contribute new papers, pleas
 GitHub Project: https://github.com/ZechengLi19/Awesome-Sign-Language
 Original Project Reference: https://github.com/ZechengLi19/Awesome-Sign-Language
 ```
+
+
 
