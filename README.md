@@ -100,10 +100,8 @@ Timeline of Sign Language works:
 - [📊 Dataset](#Dataset)
   - [Isolated Word Recognition](#Dataset_1)  
   - [Continuous Recognition](#Dataset_2)
-  - [Translation Tasks](#Dataset_3)
-  - [Video Generation](#Dataset_4)
-  - [Retrieval Tasks](#Dataset_5)
-  - [Unified Understanding](#Dataset_6)
+  - [Sign Language Production](#Dataset_3)
+  - [Unified Understanding](#Dataset_4)
   - ......
 - [💻 Others](#Others) 
 - [🖊️ Citation](#Citation)
@@ -263,100 +261,134 @@ Timeline of Sign Language works:
 ## 📊 Dataset <a id="Dataset"></a>
 
 ### Isolated Word Recognition  <a id="Dataset_1"></a>
-|   Dataset   | Language | Vocabulary Size | Number of Videos | Number of Signers | Resolution | **Data Source** | **Anno.** | **Link** |
-|:-----------:|:--------:|:---------------:|:----------------:|:-----------------:|:----------:|:---------------:|:---------:|:--------:|
-|  WLASL      | ASL      | 2,000 words     | 21K videos       | 119               | Variable   | Various sources | Manual    | [Link](https://github.com/dxli94/WLASL) |
-|  MSASL      | ASL      | 1,000 words     | 25K videos       | 222               | Variable   | MS Kinect       | Manual    | [Link](https://www.microsoft.com/en-us/research/project/ms-asl/) |
-|  NMFs-CSL   | CSL      | 1,067 words     | 32K videos       | 10                | Variable   | Studio recorded | Manual    | [Link](https://ustc-slr.github.io/datasets/) |
-|  SLR500     | CSL      | 500 words       | 125K videos      | —                 | 1280×720   | Various         | Manual    | [Link](https://ustc-slr.github.io/datasets/) |
-|  ASL Citizen| ASL      | 2,731 words     | 84K videos       | —                 | Variable   | Crowdsourced    | Manual    | [Link](https://www.microsoft.com/en-us/research/project/asl-citizen/) |
-|  Slovo      | RSL      | 1,000 words     | 20K videos       | —                 | 1920×1080  | Studio recorded | Manual    | [Link](https://github.com/hukenovs/slovo) |
-|  GSL        | Greek SL | 310 words       | 40K videos       | 7                 | Variable   | Various         | Manual    | [Link](https://vcl.iti.gr/dataset/gsl/) |
-|  BOBSL      | BSL      | 61K words       | 1.2M videos      | >100              | Variable   | TV broadcasts   | Auto+Manual | [Link](https://www.robots.ox.ac.uk/~vgg/data/bobsl/) |
-|  Auslan-Daily| Auslan  | 2.7K words      | 3K videos        | —                 | 1920×1080  | Daily conversation | Manual  | [Link](https://uq-cvlab.github.io/Auslan-Daily-Dataset/) |
-|  Purdue ASL | ASL      | 184 words       | 3,576 videos     | 14                | Variable   | Studio recorded | Manual    | N/A |
-|  RWTH-BOSTON50| ASL    | 50 words        | 483 videos       | 3                 | Variable   | Studio recorded | Manual    | N/A |
-|  IIITA-ROBITA| Indian SL| 22 words       | 605 videos       | —                 | Variable   | Studio recorded | Manual    | N/A |
-|  Boston ASLLVD| ASL    | 3,300+ words    | 9,800 videos     | 6                 | Variable   | Studio recorded | Manual    | N/A |
-|  MSR Gesture 3D| ASL   | 12 words        | 336 videos       | 10                | Variable   | Kinect          | Manual    | N/A |
-|  DGS Kinect 40| German SL| 40 words      | 3,000 videos     | 15                | Variable   | Kinect          | Manual    | N/A |
-|  GSL 982    | Greek SL | 982 words       | 4,910 videos     | 1                 | Variable   | Studio recorded | Manual    | N/A |
-|  PSL Kinect 30| Polish SL| 30 words      | 300 videos       | 1                 | Variable   | Kinect          | Manual    | N/A |
-|  PSL ToF 84 | Polish SL| 84 words        | 1,680 videos     | 1                 | Variable   | ToF Camera      | Manual    | N/A |
-|  DEVISIGN-L | CSL      | 2,000 words     | 24,000 videos    | 8                 | Variable   | Studio recorded | Manual    | N/A |
-|  LSA64      | Argentinian SL| 64 words    | 3,200 videos     | 10                | Variable   | Studio recorded | Manual    | N/A |
-|  Indian Kinect| Indian SL| 140 words     | 5,041 videos     | 18                | Variable   | Kinect          | Manual    | N/A |
-|  BosphorusSign| Turkish SL| 855 words    | — videos         | 10                | Variable   | Studio recorded | Manual    | N/A |
-|  BVCSL3D    | Indian SL| 200 words       | 20,000 videos    | 10                | Variable   | 3D Camera       | Manual    | N/A |
-|  BosphorusSign22k| Turkish SL| 744 words  | 22,542 videos    | 6                 | Variable   | Studio recorded | Manual    | N/A |
-|  ASL-100-RGBD| ASL     | 100 words       | 4,150 videos     | 22                | RGB-D      | RGBD Camera     | Manual    | N/A |
-|  KSL DATASET| Korean SL| 77 words        | 1,229 videos     | 20                | Variable   | Studio recorded | Manual    | N/A |
-|  WLASL100   | ASL      | 100 words       | 2,038 videos     | 97                | Variable   | Various sources | Manual    | N/A |
-|  WLASL300   | ASL      | 300 words       | 5,117 videos     | 109               | Variable   | Various sources | Manual    | N/A |
-|  WLASL1000  | ASL      | 1,000 words     | 13,168 videos    | 116               | Variable   | Various sources | Manual    | N/A |
-|  KArSL      | Arabic SL| 502 words       | 75,300 videos    | 3                 | Variable   | Studio recorded | Manual    | N/A |
-|  AUSLAN     | Auslan   | 1,000 words     | 1.1K videos      | 6                 | Variable   | Studio recorded | Manual    | N/A |
-|  BSL Corpus | BSL      | 5,000 words     | —                | 100               | Variable   | Various         | Manual    | N/A |
-|  PSL Kinect | Polish SL| 30 words        | 300 videos       | 6                 | Variable   | Kinect          | Manual    | N/A |
-|  DEVISIGN-G | CSL      | 36 words        | 300 videos       | 8                 | Variable   | Studio recorded | Manual    | N/A |
-|  DEVISIGN-D | CSL      | 500 words       | 2K videos        | 8                 | Variable   | Studio recorded | Manual    | N/A |
-|  LSE-sign   | Argentinian SL| 2,400 words | 24.4K videos     | 6                 | Variable   | Studio recorded | Manual    | N/A |
-|  USTC-ICSL  | CSL      | 500 words       | —                | 50                | Variable   | Studio recorded | Manual    | N/A |
-|  DISFA      | German SL| 30 words        | 300 videos       | 6                 | Variable   | Studio recorded | Manual    | N/A |
-|  SMILE      | German SL| 1,000 words     | 32K videos       | 10                | Variable   | Studio recorded | Manual    | N/A |
-|  AUTSL      | Turkish SL| 226 words      | 36.3K videos     | 43                | Variable   | Studio recorded | Manual    | N/A |
-|  CSSL5000   | CSL      | 1,000 words     | 100K videos      | 50                | Variable   | Studio recorded | Manual    | N/A |
-|  BSL-1K     | BSL      | 1,000 words     | 1K videos        | 10                | Variable   | Studio recorded | Manual    | N/A |
-|  INCLUDE    | CSL      | 263 words       | 4.3K videos      | 7                 | Variable   | Studio recorded | Manual    | N/A |
-|  WLASL-LEX  | ASL      | 800 words       | 10K videos       | 119               | Variable   | Various sources | Manual    | N/A |
+|   Dataset   | Lang | Vocab | Videos | Signers | Res | Source | Anno | Link |
+|:-----------:|:----:|:-----:|:------:|:-------:|:---:|:------:|:----:|:----:|
+|  Purdue RVL-SLLL | ASL | 184 | 3.6K | 14 | Var | SR | M | — |
+|  RWTH-BOSTON-50 | ASL | 50 | 483 | 3 | Var | SR | M | — |
+|  GSLC | GSL | — | — | 4 | Var | SR | M | — |
+|  Boston ASLLVD | ASL | 3.3K+ | 9.8K | 6 | Var | SR | M | — |
+|  IIITA-ROBITA | ISL | 22 | 605 | — | Var | SR | M | — |
+|  Auslan dataset | Auslan | — | — | 100 | Var | Var | M | — |
+|  MSR Gesture 3D | ASL | 12 | 336 | 10 | Var | Kinect | M | — |
+|  DGS Kinect 40 | DGS | 40 | 3.0K | 15 | Var | Kinect | M | — |
+|  Dicta-Sign | Multi | — | — | 14-16/SL | Var | Var | M | — |
+|  PSL Kinect 30 | PSL | 30 | 300 | 10 | Var | Kinect | M | — |
+|  ASLG-PC12 | ASL | — | — | — | Var | Var | M | — |
+|  CUNY ASL | ASL | — | — | 8 | Var | SR | M | — |
+|  DEVISIGN-G | CSL | 36 | 300 | 8 | Var | SR | M | — |
+|  DEVISIGN-D | CSL | 500 | 2.0K | 8 | Var | SR | M | — |
+|  DEVISIGN-L | CSL | 2.0K | 24.0K | 8 | Var | SR | M | — |
+|  PSL ToF 84 | PSL | 84 | 1.7K | 1 | Var | ToF | M | — |
+|  LSA64 | LSA | 64 | 3.2K | 10 | Var | SR | M | — |
+|  Indian Kinect | ISL | 140 | 5.0K | 18 | Var | Kinect | M | — |
+|  BosphorusSign | TSL | 855 | — | 10 | Var | SR | M | — |
+|  USTC CSL dataset | CSL | 178 | — | 50 | Var | SR | M | — |
+|  WLASL | ASL | 2.0K | 21.0K | 119 | Var | Var | M | [🔗](https://github.com/dxli94/WLASL) |
+|  WLASL100 | ASL | 100 | 2.0K | 97 | Var | Var | M | — |
+|  WLASL300 | ASL | 300 | 5.1K | 109 | Var | Var | M | — |
+|  WLASL1000 | ASL | 1.0K | 13.2K | 116 | Var | Var | M | — |
+|  MS-ASL | ASL | 1.0K | 25.5K | 222 | Var | Kinect | M | [🔗](https://www.microsoft.com/en-us/research/project/ms-asl/) |
+|  ASL-100-RGBD | ASL | 100 | 4.2K | 22 | RGB-D | RGBD | M | — |
+|  DGS Korpus | DGS | — | — | 330 | Var | Var | M | — |
+|  BosphorusSign22k | TSL | 744 | 22.5K | 6 | Var | SR | M | — |
+|  AUTSL | TSL | 226 | 36.3K | 43 | Var | SR | M | — |
+|  K-RSL | RSL | 600 | — | 11 | Var | Var | M | — |
+|  GSL | GSL | 310 | 40.0K | 7 | Var | Var | M | [🔗](https://vcl.iti.gr/dataset/gsl/) |
+|  NMFs-CSL | CSL | 1.1K | 32.0K | 10 | Var | SR | M | [🔗](https://ustc-slr.github.io/datasets/) |
+|  SLR500 | CSL | 500 | 125.0K | — | 1280×720 | Var | M | [🔗](https://ustc-slr.github.io/datasets/) |
+|  ASL Citizen | ASL | 2.7K | 84.0K | — | Var | Crowd | M | [🔗](https://www.microsoft.com/en-us/research/project/asl-citizen/) |
+|  Slovo | RSL | 1.0K | 20.0K | — | 1920×1080 | SR | M | [🔗](https://github.com/hukenovs/slovo) |
+|  BOBSL | BSL | 61.0K | 1.2M | >100 | Var | TV | A+M | [🔗](https://www.robots.ox.ac.uk/~vgg/data/bobsl/) |
+|  Auslan-Daily | Auslan | 2.7K | 3.0K | — | 1920×1080 | Daily | M | [🔗](https://uq-cvlab.github.io/Auslan-Daily-Dataset/) |
+|  BVCSL3D | ISL | 200 | 20.0K | 10 | Var | 3D | M | — |
+|  KSL DATASET | KSL | 77 | 1.2K | 20 | Var | SR | M | — |
+|  KArSL | ArSL | 502 | 75.3K | 3 | Var | SR | M | — |
+|  AUSLAN | Auslan | 1.0K | 1.1K | 6 | Var | SR | M | — |
+|  BSL Corpus | BSL | 5.0K | — | 100 | Var | Var | M | — |
+|  PSL Kinect | PSL | 30 | 300 | 6 | Var | Kinect | M | — |
+|  LSE-sign | LSA | 2.4K | 24.4K | 6 | Var | SR | M | — |
+|  USTC-ICSL | CSL | 500 | — | 50 | Var | SR | M | — |
+|  DISFA | DGS | 30 | 300 | 6 | Var | SR | M | — |
+|  SMILE | DGS | 1.0K | 32.0K | 10 | Var | SR | M | — |
+|  CSSL5000 | CSL | 1.0K | 100.0K | 50 | Var | SR | M | — |
+|  BSL-1K | BSL | 1.0K | 1.0K | 10 | Var | SR | M | — |
+|  INCLUDE | CSL | 263 | 4.3K | 7 | Var | SR | M | — |
+|  WLASL-LEX | ASL | 800 | 10.0K | 119 | Var | Var | M | — |
+
+**Abbreviations:**
+- **Lang**: Language (ASL=American SL, BSL=British SL, CSL=Chinese SL, DGS=German SL, GSL=Greek SL, ISL=Indian SL, KSL=Korean SL, PSL=Polish SL, RSL=Russian SL, TSL=Turkish SL, LSA=Argentinian SL, ArSL=Arabic SL)
+- **Vocab**: Vocabulary Size (K=thousand)
+- **Videos**: Number of Videos (K=thousand, M=million)
+- **Signers**: Number of Signers
+- **Res**: Resolution (Var=Variable, RGB-D=RGB+Depth)
+- **Source**: Data Source (SR=Studio Recorded, TV=TV Broadcast, Crowd=Crowdsourced, Daily=Daily Conversation, ToF=Time-of-Flight Camera, 3D=3D Camera)
+- **Anno**: Annotation (M=Manual, A=Automatic, A+M=Automatic+Manual)
+- **Link**: 🔗=Available, —=Not Available
 
 ### Continuous Recognition <a id="Dataset_2"></a>
-|   Dataset   | Language | Vocabulary Size | Number of Videos | Number of Signers | Avg Length | **Data Source** | **Anno.** | **Link** |
-|:-----------:|:--------:|:---------------:|:----------------:|:-----------------:|:----------:|:---------------:|:---------:|:--------:|
-|  Phoenix-2014| GSL     | 1,232 words     | 6.8K videos      | 50                | 3.2 sentences | Weather broadcast | Manual | [Link](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
-|  Phoenix-2014T| GSL    | 1,232 words     | 8.2K videos      | 9                 | 3.2 sentences | Weather broadcast | Manual | [Link](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
-|  CSL-Daily  | CSL      | 2K words        | 20.6K videos     | 10                | 5.4 sentences | Daily conversation | Manual | [Link](https://ustc-slr.github.io/datasets/) |
-|  GSL        | Greek SL | 310 words       | 10.3K videos     | 7                 | Variable | Various | Manual | [Link](https://vcl.iti.gr/dataset/gsl/) |
-|  TVB-HKSL-News| HKSL   | 3K words        | 16.1K videos     | —                 | Variable | TV news | Manual | N/A |
-|  RWTH-BOSTON-104| ASL   | 103+65 words    | 161+40 videos    | 3                 | Variable | Studio recorded | Manual | N/A |
-|  RWTH-BOSTON-400| ASL   | 483+74+36 words | 633+106+104 videos| 4                | Variable | Studio recorded | Manual | N/A |
-|  SIGNUM     | German SL| 450 words       | 780 videos       | 25                | Variable | Studio recorded | Manual | N/A |
-|  RWTH-PHOENIX-Weather-2012| German SL| 911 words | 1,980 videos | 7           | Variable | Weather broadcast | Manual | N/A |
-|  RWTH-PHOENIX-Weather-2014| German SL| 1,080 words | 6,861 videos | 9          | Variable | Weather broadcast | Manual | [Link](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
-|  SignsWorld Atlas| Arabic SL| 264+ words   | 535+ videos      | 10                | Variable | Studio recorded | Manual | N/A |
-|  MS-ASL100  | ASL      | 100 words       | 5,736 videos     | 189               | Variable | MS Kinect | Manual | N/A |
-|  MS-ASL200  | ASL      | 200 words       | 9,719 videos     | 196               | Variable | MS Kinect | Manual | N/A |
-|  MS-ASL500  | ASL      | 500 words       | 17,823 videos    | 2222              | Variable | MS Kinect | Manual | N/A |
-|  MS-ASL1000 | ASL      | 1,000 words     | 25,513 videos    | 222               | Variable | MS Kinect | Manual | N/A |
-|  TheRuSLan Kinect| RSL  | 164 words       | — videos         | 13                | Variable | Kinect | Manual | N/A |
-|  Boston-104 | ASL      | 128 words       | 214 videos       | 6                 | Variable | Studio recorded | Manual | N/A |
-|  S-pot      | Finnish SL| —              | 5.4K videos      | 5                 | Variable | Various | Manual | N/A |
-|  RWTH-PHOENIX-WEATHER-2014| German SL| 1,081 words | 6.8K videos | 50           | Variable | Weather broadcast | Manual | [Link](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
-|  USTC-CCSL  | CSL      | 1,176 words     | 25K videos       | 50                | Variable | Studio recorded | Manual | N/A |
-|  RWTH-PHOENIX-WEATHER-2014T| German SL| 1,068 words | 6.3K videos | 9            | Variable | Weather broadcast | Manual | [Link](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
-|  RCSD       | CSL      | 242 words       | 4.2K videos      | 10                | Variable | Studio recorded | Manual | N/A |
-|  KETI       | Korean SL| 419 words       | 14.7K videos     | 14                | Variable | Studio recorded | Manual | N/A |
-|  MEDIAPI-SKEL| BSL     | 14,383 words    | 36.9K videos     | >100              | Variable | TV broadcasts | Manual | N/A |
-|  How2sign   | ASL      | 16,000 words    | 60K videos       | 11                | Variable | Studio recorded | Manual | [Link](https://how2sign.github.io/) |
+|   Dataset   | Lang | Vocab | Videos | Signers | Length | Source | Anno | Link |
+|:-----------:|:----:|:-----:|:------:|:-------:|:------:|:------:|:----:|:----:|
+|  GSLC | GSL | — | — | 4 | Var | SR | M | — |
+|  SIGNUM | DGS | 450 | 780 | 20 | Var | SR | M | — |
+|  Corpus NGT | NGT | — | — | 92 | Var | Var | M | — |
+|  RWTH-BOSTON-104 | ASL | 168 | 201 | 3 | Var | SR | M | — |
+|  RWTH-BOSTON-400 | ASL | 593 | 843 | 4 | Var | SR | M | — |
+|  Auslan dataset | Auslan | — | — | 100 | Var | Var | M | — |
+|  RWTH-Phoenix-Weather | DGS | 911 | 2.0K | 7 | Var | Weather | M | — |
+|  Dicta-Sign | Multi | — | — | 14-16/SL | Var | Var | M | — |
+|  BSL Corpus | BSL | — | — | 249 | Var | Var | M | — |
+|  S-pot | FinSL | 1.2K | 5.4K | 5 | Var | Var | M | — |
+|  Phoenix-2014 | DGS | 1.2K | 6.8K | 50 | 3.2 sent | Weather | M | [🔗](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
+|  RWTH-Phoenix-Weather-2014 | DGS | 1.1K | 6.8K | 9 | Var | Weather | M | [🔗](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
+|  Phoenix-2014T | DGS | 1.2K | 8.2K | 9 | 3.2 sent | Weather | M | [🔗](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
+|  RWTH-Phoenix-2014T | DGS | 1.2K | 6.3K | 9 | Var | Weather | M | [🔗](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/) |
+|  How2Sign | ASL | 16.0K | 60.0K | 11 | Var | YouTube | M | [🔗](https://how2sign.github.io/) |
+|  CSL-Daily | CSL | 2.0K | 20.7K | 10 | 5.4 sent | Daily | M | [🔗](https://ustc-slr.github.io/datasets/) |
+|  GSL | GSL | 310 | 10.3K | 7 | Var | Var | M | [🔗](https://vcl.iti.gr/dataset/gsl/) |
+|  TVB-HKSL-News | HKSL | 3.0K | 16.1K | — | Var | TV | M | — |
+|  SignsWorld Atlas | ArSL | 264+ | 535+ | 10 | Var | SR | M | — |
+|  MS-ASL100 | ASL | 100 | 5.7K | 189 | Var | Kinect | M | — |
+|  MS-ASL200 | ASL | 200 | 9.7K | 196 | Var | Kinect | M | — |
+|  MS-ASL500 | ASL | 500 | 17.8K | 2.2K | Var | Kinect | M | — |
+|  MS-ASL1000 | ASL | 1.0K | 25.5K | 222 | Var | Kinect | M | — |
+|  TheRuSLan Kinect | RSL | 164 | — | 13 | Var | Kinect | M | — |
+|  Boston-104 | ASL | 128 | 214 | 6 | Var | SR | M | — |
+|  USTC-CCSL | CSL | 1.2K | 25.0K | 50 | Var | SR | M | — |
+|  RCSD | CSL | 242 | 4.2K | 10 | Var | SR | M | — |
+|  KETI | KSL | 419 | 14.7K | 14 | Var | SR | M | — |
+|  MEDIAPI-SKEL | BSL | 14.4K | 36.9K | >100 | Var | TV | M | — |
+|  OpenASL | ASL | 22.0K | 288h videos | — | Var | Var | M | [🔗](https://github.com/chevalierNoir/OpenASL) |
+|  Auslan-Daily | Auslan | 2.7K | 14.0K | — | Var | Daily | M | [🔗](https://uq-cvlab.github.io/Auslan-Daily-Dataset/) |
+|  YouTube-ASL | ASL | 11.0K | 984h videos | — | Var | YouTube | A+M | [🔗](https://github.com/google-research/google-research/tree/master/youtube_asl) |
+|  LSA-T | LSA | 3.0K | 14.9K | — | Var | YouTube | M | [🔗](https://github.com/midusi/LSA-T) |
+|  VECSL | CSL | 2.6K | 15.7K | — | Var | DVS346 | M | [🔗](https://github.com/Event-AHU/OpenESL) |
+|  Event-SLT | CSL | 3.0K | 20.0K | — | Var | DVS346 | M | [🔗](https://github.com/Event-AHU/Event-SLT) |
 
-### Translation Tasks <a id="Dataset_3"></a>
-|   Dataset   | Language | Vocabulary Size | Number of Videos | Number of Signers | Modality | **Data Source** | **Anno.** | **Link** |
-|:-----------:|:--------:|:---------------:|:----------------:|:-----------------:|:--------:|:---------------:|:---------:|:--------:|
-|  How2Sign   | ASL      | 16K words       | 80 hours         | 11                | RGB+3D   | YouTube         | Manual    | [Link](https://how2sign.github.io/) |
-|  OpenASL    | ASL      | 22K words       | 288 hours        | —                 | RGB      | Various         | Manual    | [Link](https://github.com/chevalierNoir/OpenASL) |
-|  BOBSL      | BSL      | 61K words       | 1.2M videos      | >100              | RGB      | TV broadcasts   | Manual    | [Link](https://www.robots.ox.ac.uk/~vgg/data/bobsl/) |
-|  Auslan-Daily| Auslan  | 2.7K words      | 14K videos       | —                 | RGB      | Daily conversation | Manual | [Link](https://uq-cvlab.github.io/Auslan-Daily-Dataset/) |
-|  YouTube-ASL| ASL      | 11K words       | 984 hours        | —                 | RGB      | YouTube         | Auto+Manual | [Link](https://github.com/google-research/google-research/tree/master/youtube_asl) |
-|  LSA-T      | LSA      | 3K words        | 14.9K videos     | —                 | RGB      | YouTube         | Manual    | [Link](https://github.com/midusi/LSA-T) |
-|  SignBank+  | Multiple | 8K words        | 10K videos       | —                 | SignWriting | Various      | Manual    | [Link](https://github.com/sign-language-processing/signbank-plus) |
-|  VECSL      | CSL      | 2.6K words      | 15.7K videos     | —                 | RGB+Event | DVS346          | Manual    | [Link](https://github.com/Event-AHU/OpenESL) |
-|  Event-SLT  | CSL      | 3K words        | 20K videos       | —                 | RGB+Event | DVS346          | Manual    | [Link](https://github.com/Event-AHU/Event-SLT) |
+**Abbreviations:**
+- **Lang**: Language (NGT=Dutch SL, FinSL=Finnish SL, HKSL=Hong Kong SL, others same as above)
+- **Vocab**: Vocabulary Size (K=thousand)
+- **Videos**: Number of Videos (K=thousand)
+- **Signers**: Number of Signers (K=thousand)
+- **Length**: Average Length (sent=sentences, Var=Variable)
+- **Source**: Data Source (Weather=Weather Broadcast, YouTube=YouTube Videos, DVS346=Event Camera, others same as above)
+- **Anno**: Annotation (M=Manual, A=Automatic)
+- **Link**: 🔗=Available, —=Not Available
 
-### Video production <a id="Dataset_4"></a>
-|   Dataset   | Purpose | Size | Input Type | Output Type | **Data Source** | **Anno.** | **Link** |
-|:-----------:|:-------:|:----:|:----------:|:-----------:|:---------------:|:---------:|:--------:|
-|  SignAvatars | Generation | 8K videos | Text/Gloss | Video | Synthetic | Auto | [link](https://github.com/ZhengdiYu/SignAvatars) |
-|  T2S-GPT（PHOENIX-News）    | Generation | Phoenix subset | Text | Pose sequence | Phoenix-2014T | Manual | [Link](https://t2sgpt-demo.yinaoxiong.cn/) |
+### Sign Language Production <a id="Dataset_3"></a>
+|   Dataset   | Purpose | Size | Input Type | Output Type | Source | Anno | Link |
+|:-----------:|:-------:|:----:|:----------:|:-----------:|:------:|:----:|:----:|
+|  SignAvatars | Generation | 8K videos | Text/Gloss | Video | Synthetic | A | [🔗](https://github.com/ZhengdiYu/SignAvatars) |
+|  T2S-GPT | Generation | Phoenix subset | Text | Pose sequence | Phoenix-2014T | M | [🔗](https://t2sgpt-demo.yinaoxiong.cn/) |
+
+
+**Abbreviations:**
+- **Purpose**: Dataset Purpose (Generation=Sign Generation, Multi-task=Multiple Tasks)
+- **Size**: Dataset Size (K=thousand)
+- **Input Type**: Input Modality (Text=Natural Language Text, Gloss=Sign Glosses)
+- **Output Type**: Output Modality (Video=Sign Language Video, Pose=Pose Sequences, SignWriting=Sign Writing System)
+- **Source**: Data Source (Synthetic=Synthetically Generated, Phoenix-2014T=Phoenix Weather Dataset, Var=Various Sources)
+- **Anno**: Annotation (M=Manual, A=Automatic)
+- **Link**: 🔗=Available, —=Not Available
 
 
 ### Retrieval Tasks <a id="Dataset_5"></a>
@@ -364,7 +396,7 @@ Timeline of Sign Language works:
 |-------------|-------------|----------|----------------|-----------------|-----------------|-----------|---------|
 
 
-### Unified Understanding <a id="Dataset_6"></a>
+### Unified Understanding <a id="Dataset_4"></a>
 | **Dataset** | **Language** | **Tasks** | **Vocabulary Size** | **Number of Videos** | **Number of Signers** | **Modality** | **Data Source** | **Anno.** | **Link** |
 |-------------|-------------|-----------|--------------------:|---------------------:|----------------------:|--------------|-----------------|-----------|---------|
 | Uni-Sign Dataset(CSL News) | Multiple | Rec+Trans+Retr | —               | 100K videos         | —                     | RGB+Pose     | Multiple        | Manual    | [Link](https://github.com/ZechengLi19/Uni-Sign) |
