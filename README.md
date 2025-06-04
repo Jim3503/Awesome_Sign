@@ -340,7 +340,7 @@ Timeline of Sign Language works:
 | NMFs-CSL             | CSL              | Isolated words      | 1,067               | 32,000              | 10                  |
 | WLASL-LEX            | ASL              | Isolated words      | 800                 | 10,017              | 119                 |
 | Boston-104           | ASL              | Continuous sentences| 128                 | 214                 | 6                   |
-| SIGNUM               | German SL        | Continuous sentences| 455                 | 1,230               | 25                  |
+| SIGNUM               | German SL        | Continuous sentences| 455                 | 1,230               | 25                   |
 | S-pot                | Finnish SL       | Continuous sentences| —                   | 5,359               | 5                   |
 | RWTH-PHOENIX-WEATHER-2014 | German SL   | Continuous sentences| 1,081               | 6,841               | 50                  |
 | USTC-CCSL            | CSL              | Continuous sentences| 1,176               | 25,000              | 50                  |
@@ -437,7 +437,7 @@ If you have suggestions for improvements or want to contribute new papers, pleas
 
 ```
 GitHub Project: https://github.com/ZechengLi19/Awesome-Sign-Language
-Original Project Reference: https://github.com/ZechengLi19/Awesome-Sign-Language
+Original Project Reference: https://github.com/ZechengLi19/Awesome-Sign-Language    
 ```
 
 
