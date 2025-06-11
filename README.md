@@ -484,12 +484,6 @@ Special thanks to:
 
 If you have suggestions for improvements or want to contribute new papers, please feel free to submit issues or pull requests.
 
-## 🐲 Contact <a id="Contact"></a>
-
-```
-GitHub Project: https://github.com/ZechengLi19/Awesome-Sign-Language
-Original Project Reference: https://github.com/ZechengLi19/Awesome-Sign-Language    
-```
 
 
 
