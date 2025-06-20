@@ -439,11 +439,12 @@ Timeline of Sign Language works:
 |  Time   | Method Name | Paper Title                                                                                                                                               |     Technique Type     |             Code/Project              |
 |:-------:|:-----------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------:|:-------------------------------------:|
 | 2018.12 | SpecAugment | [SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition](https://arxiv.org/abs/1904.08779) (INTERSPEECH) | Spectral Augmentation | [link](https://github.com/jameslyons/python_speech_features) |
-| 2021.05 | Domain-Adapt| [Data Augmentation for Sign Language Gloss Translation](https://arxiv.org/abs/2105.07476) (AT4SSL) |  | N/A |
+| 2021.05 | Domain-Adapt| [Data Augmentation for Sign Language Gloss Translation](https://arxiv.org/abs/2105.07476) (AT4SSL) | Domain Transfer | N/A |
 | 2022.05 | VideoMix    | [VideoMix: Rethinking Data Augmentation for Video Classification](https://arxiv.org/abs/2012.03457) (CVPR) | Video Augmentation | [link](https://github.com/yhZhai/VideoMix) |
-| 2023.10 | SLR-Aug     | [Preliminary Study on Data Augmentation Methods for Sign Language Recognition](https://www.researchgate.net/publication/375785218_Preliminary_Study_on_Data_Augmentation_Methods_for_Sign_Language_Recognition) (ICCAS)  |  | N/A |
-| 2024.05 | XmDA        | [Cross-modality Data Augmentation for End-to-End Sign Language Translation](https://arxiv.org/abs/2305.11096) (arXiv) | Cross-modal Aug | N/A |
-| 2025.06 | SignAug     | [Using Sign Language Production as Data Augmentation to enhance Sign Language Translation](https://arxiv.org/html/2506.09643v1) (arXiv) |  | N/A |
+| 2023.10 | SLR-Aug     | [Preliminary Study on Data Augmentation Methods for Sign Language Recognition](https://www.researchgate.net/publication/375785218_Preliminary_Study_on_Data_Augmentation_Methods_for_Sign_Language_Recognition) (ICCAS) | Multi-modal Aug | N/A |
+| 2024.05 | XmDA        | [Cross-modality Data Augmentation for End-to-End Sign Language Translation](https://arxiv.org/abs/2305.11096) (arXiv) | Cross-modal Aug | [link](https://github.com/Atrewin/SignXmDA) |
+| 2025.06 | SignAug     | [Using Sign Language Production as Data Augmentation to enhance Sign Language Translation](https://arxiv.org/html/2506.09643v1) (arXiv) | Generative Aug | N/A |
+
 
 ### Cross-lingual and Multilingual Sign Language Research
 |  Time   | Method Name | Paper Title                                                                                                                                               |     Focus Area         |             Code/Project              |
