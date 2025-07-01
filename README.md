@@ -241,7 +241,10 @@ Timeline of Sign Language works:
 | 2024.02  |  Sign2GPT   | [Sign2GPT: Leveraging Large Language Models for Gloss-free Sign Language Translation](https://arxiv.org/abs/2405.04164) (arXiv)                                                              | Video CNN | GPT | Prompt Tuning | N/A |
 | 2024.06  | LLMs-Good-SL| [LLMs are Good Sign Language Translators](https://arxiv.org/abs/2404.00925) (CVPR)                   | ViT | LLaMA/GPT | LoRA | N/A |
 | 2024.09  | Visual-Align| [Visual Alignment Pretraining for Sign Language Translation](https://eccv.ecva.net/virtual/2024/poster/737) (ECCV)                                                                                        | CLIP | Transformer | Frozen | N/A |
+| 2024.12 | LLaVA-SLT | LLaVA-SLT: Visual Language Tuning for Sign Language Translation (arXiv) | （DINOv2 ViT-B/14 — CLIP-style contrastive pre-training） | （Qwen-2.5-Instruct 3 B / 7 B / 14 B） | （视觉编码器与 LLM 全部 Frozen，仅两层 MLP 连接器可训练） | N/A | 
 | 2024.10  |Factorized-LLM| [Factorized Learning Assisted by Large Language Model for Gloss-free Sign Language Translation](https://aclanthology.org/2024.lrec-main.620/) (LREC-COLING)                                       | CNN | LLM | Adapter | N/A |
+| 2025.4  |SpaMo| [An Efficient Gloss-Free Sign Language Translation Using Spatial Configurations and Motion Dynamics with LLMs](https://aclanthology.org/2025.naacl-long.197/) (NAACL)                                       | CNN | LLM | Adapter | N/A |
+
 
 ### Unified Sign Language Foundation Models
 
