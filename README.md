@@ -57,6 +57,7 @@ Share us a :star: if you're interested in this repo. We will continue to track r
 
 ### 🥳 News
 
+- **2026-11-19 (latest-work follow-up):** Added 14 more works, including November releases and 2026 conference updates. [Read the latest-work table](#latest-work).
 - **2026-11-19:** Added 25 verified papers from 2025–2026, a BibTeX file and selected corrections to older entries. [See the update](#verified-additions).
 
 [//]: # (- **2025.5.26**: The first version is available.)
@@ -79,6 +80,33 @@ Share us a :star: if you're interested in this repo. We will continue to track r
 Timeline of Sign Language works:
 
 <!-- ![Alt Text](fig/overview_3.png) -->
+
+## Latest papers and 2026 conference updates <a id="latest-work"></a>
+
+**Follow-up checked on 2026-11-19: 14 additional works**, including a new preprint posted on **2026-11-17**. Together with the [earlier 25-paper update](#verified-additions), these two dated updates add **39 distinct works**; this is not the total size of the repository.
+
+[BibTeX for these 14 works](references_latest_2026-11-19.bib) · [Verification and version notes](UPDATES_2026-11-19.md#latest-work-follow-up)
+
+The date column distinguishes arXiv posting/revision from publisher online publication. A newer revision is not counted as another paper. This selection includes recent releases and additional 2026 conference work; it is not an exhaustive list of everything published before the cutoff. An accepted conference paper is not labelled as already published in proceedings when only an official programme/listing was checked.
+
+| Version / publication date | Paper | Verified status as of 2026-11-19 | Task and contribution | Author resource |
+|---|---|---|---|---|
+| 2026-11-17 | [SignAligner: Dual-Granularity Span Generation for Sign Language Alignment](https://arxiv.org/abs/2611.22409) | arXiv — preprint | Alignment / spotting: jointly predicts subtitle and word spans, then refines temporal overlap using reward-based training. | — |
+| 2026-11-06 (revised) | [Maswao: An automatically collected, prepared, and benchmarked dataset for South African Sign Language](https://arxiv.org/abs/2611.02903) | arXiv — preprint | Dataset / SLT: automatically collects South African signing broadcasts and builds weakly aligned video–text pairs. | — |
+| 2026-11-05 | [MV-Sign: Multi-View 3D Motion Integration and Enhanced Text-to-Motion Conditioning for Sign Language Production](https://arxiv.org/abs/2611.07811) | arXiv; WACV 2027 acceptance reported by authors | 3D production: multi-view motion curation, body–hand tokens and retrieval improve text-conditioned generation. | — |
+| 2026-11-02 (arXiv); Oct 2026 proceedings | [Znaki: A Russian Fingerspelling Recognition Dataset](https://aclanthology.org/2026.wslp-1.20/) | WSLP 2026 (workshop) | Fingerspelling dataset: Russian signing videos with character and sequence recognition baselines. | — |
+| 2026-10-15 (revised) | [DINO Eats Geometry: Self-Supervised Sign Representations that Absorb Articulated Hand Geometry](https://arxiv.org/abs/2609.06296) | arXiv — preprint | Representation learning: SignDEG transfers articulated hand geometry into a video encoder during pretraining; geometry heads are removed at inference. | — |
+| 2026-10-14 (online advance) | [Machine Translation for Sign Languages](https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-040125-043013) | Annual Review of Linguistics — Review in Advance | Survey: connects translation and production methods with linguistic structure, evaluation and Deaf-community participation. | — |
+| 2026-10-12 | [From Clips to Streams: A Unified Framework for Streaming Sign Language Translation](https://arxiv.org/abs/2611.00055) | NeurIPS 2026 — accepted; official listing ([programme](https://neurips.cc/virtual/2026/poster/155080)) | Streaming SLT: jointly segments and translates untrimmed video; separates real streaming datasets from synthetic streaming benchmarks. | [Code/data](https://github.com/streamsl/StreamSLST) |
+| 2026-09-08 | [SignRefine: Adapting Foundational Video Models for Sign Language Generation](https://arxiv.org/abs/2609.08496) | ECCV 2026 — official accepted-paper list ([listing](https://eccv.ecva.net/Conferences/2026/AcceptedPapers)) | Video generation: adapts a video diffusion transformer with local hand/face refinement and introduces NVSign. | [Project](https://cogvis-cvssp.github.io/papers/signrefine/) |
+| 2026-09-02 (revised) | [M3T: Discrete Multi-Modal Motion Tokens for Sign Language Production](https://arxiv.org/abs/2603.23617) | BMVC 2026 — accepted; official programme ([programme](https://bmvc2026.bmva.org/programme/tuesday/)) | 3D production: uses separate body, hand and face tokens, richer facial expression and an auxiliary translation objective. | [Project; code marked coming soon](https://cogvis-cvssp.github.io/papers/m3t/) |
+| 2026-09-02 (revised; first posted 2025) | [SignBind-LLM: Multi-Stage Modality Fusion for Sign Language Translation](https://arxiv.org/abs/2509.00030) | ECCV 2026 — official accepted-paper list ([listing](https://eccv.ecva.net/Conferences/2026/AcceptedPapers)) | SLT: combines signing, fingerspelling and lipreading experts through learned temporal alignment and a language decoder. | — |
+| 2026-06-27 | [BackTranslation2.0 -- A Linguistically Motivated Metric to Assess Sign Language Production](https://arxiv.org/abs/2606.28673) | ECCV 2026 — official accepted-paper list ([listing](https://eccv.ecva.net/Conferences/2026/AcceptedPapers)) | Production evaluation: combines linguistic and motion tools into interpretable scores and compares them with human ratings. | [Project](https://cogvis-cvssp.github.io/BackTranslation2/) |
+| 2026-06-26 | [SIGNET: Motion-Level Knowledge Transfer for Cross-Language Sign Language Translation](https://arxiv.org/abs/2606.28626) | ECCV 2026 — official accepted-paper list ([listing](https://eccv.ecva.net/Conferences/2026/AcceptedPapers)) | Cross-language SLT: combines pretrained sign backbones using hand-prior attention and gated expert fusion. | — |
+| 2026-06-25 (revised) | [SignSparK: Efficient Multilingual Sign Language Production via Sparse Keyframe Learning](https://arxiv.org/abs/2603.10446) | ECCV 2026 — official accepted-paper list ([listing](https://eccv.ecva.net/Conferences/2026/AcceptedPapers)) | Multilingual production: sparse keyframes condition flow-matching generation of dense 3D signing motion. | [Code](https://github.com/JianHe0628/SignSparK) · [Project](https://cogvis-cvssp.github.io/papers/signspark/) |
+| 2026-03-19 | [SignAgent: Agentic LLMs for Linguistically-Grounded Sign Language Annotation and Dataset Curation](https://arxiv.org/abs/2603.19059) | arXiv — preprint | Annotation / curation: a tool-using LLM coordinates pseudo-gloss annotation and lexical-variant grouping. | — |
+
+**Version and task cautions:** SignDEG (`arXiv:2609.06296`, current title *DINO Eats Geometry*) is distinct from Gan et al.'s CVPR 2026 SignDINO paper in the earlier update. SignAligner predicts temporal spans rather than translated sentences. SignRefine generates video from pose conditioning; it should not be compared directly to text-to-pose or video-to-text systems. MV-Sign's WACV 2027 acceptance is attributed to the arXiv authors, not independently confirmed proceedings. Project pages and code availability are recorded separately; no linked implementation was executed.
 
 ## Verified additions: 2025–2026 <a id="verified-additions"></a>
 
@@ -140,6 +168,7 @@ Timeline of Sign Language works:
 **Comparing results:** record the split, signer overlap, duplicate target sentences, input modality, gloss supervision, external pretraining data and retrieval-gallery construction. Report ISLR accuracy, CSLR WER, SLT text/semantic metrics and SLP motion/comprehension measures separately. A better score in one paper is not evidence of superiority under unmatched training or evaluation conditions.
 
 ## 📖 Table of Contents
+- [Latest papers and 2026 conference updates](#latest-work)
 - [Verified additions: 2025–2026](#verified-additions)
 - [📚 Sign Language Tasks and Methods](#methods-a-survey)
   - [Isolated Sign Recognition](#isolated-sign-recognition)
