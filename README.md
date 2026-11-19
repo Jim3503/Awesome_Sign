@@ -4,15 +4,11 @@
 
 **A Comprehensive Collection of Sign Language Research Papers, Datasets, and Resources**
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/mingji/SignLLM/pulls)
-[![GitHub stars](https://img.shields.io/github/stars/mingji/SignLLM?style=social)](https://github.com/mingji/SignLLM/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/mingji/SignLLM?style=social)](https://github.com/mingji/SignLLM/network/members)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/Jim3503/Awesome_Sign/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/Jim3503/Awesome_Sign?style=social)](https://github.com/Jim3503/Awesome_Sign/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Jim3503/Awesome_Sign?style=social)](https://github.com/Jim3503/Awesome_Sign/network/members)
 
-[![Last Update](https://img.shields.io/badge/Last%20Update-2025--05-green.svg)](https://github.com/mingji/SignLLM)
-[![Papers](https://img.shields.io/badge/Papers-150+-blue.svg)](https://github.com/mingji/SignLLM)
-[![Datasets](https://img.shields.io/badge/Datasets-30+-orange.svg)](https://github.com/mingji/SignLLM)
-[![Survey](https://img.shields.io/badge/Survey-Sign_Language-red.svg)](https://github.com/mingji/SignLLM)
+[![Last Update](https://img.shields.io/badge/Last%20Update-2026--11--19-green.svg)](https://github.com/Jim3503/Awesome_Sign)
 
 ---
 
@@ -22,7 +18,7 @@
 
 <br />
 <p align="center">
-  <h1 align="center">Sign Language: A Comprehensive Survey</h1>
+  <h1 align="center">Sign Language Research Collection</h1>
   <!-- <p align="center">
     <br />
     <a href="https://chen-yang-liu.github.io/"><strong>Chenyang Liu </strong></a>
@@ -50,24 +46,24 @@
   </p>
 <br />
 
-This repo is used for recording and tracking recent Sign Language research, including Recognition, Translation, Production, and Unified Understanding. If you find any work missing or have any suggestions (papers, implementations, and other resources), feel free to [pull requests](https://github.com/ZechengLi19/Awesome-Sign-Language/pulls).
+This repo is used for recording and tracking recent Sign Language research, including Recognition, Translation, Production, and Unified Understanding. If you find any work missing or have any suggestions (papers, implementations, and other resources), feel free to [pull requests](https://github.com/Jim3503/Awesome_Sign/pulls).
 
 ### :star: Share us a :star:
 Share us a :star: if you're interested in this repo. We will continue to track relevant progress and update this repository.
 
-### 🙌 Add Your Paper in our Repo and Survey!
+### 🙌 Suggest a paper
 
-- You are welcome to give us an issue or PR for your Sign Language work !!!!! We will record it for next version update of our survey
+- Suggest relevant work through an issue or pull request, including the paper title, primary source and task.
 
 ### 🥳 News
 
-🔥🔥🔥 The repo is updating 🔥🔥🔥
+- **2026-11-19:** Added 25 verified papers from 2025–2026, a BibTeX file and selected corrections to older entries. [See the update](#verified-additions).
 
 [//]: # (- **2025.5.26**: The first version is available.)
 
 ### ✨ Highlight!!
 
-✅ The first comprehensive survey for Sign Language research covering Recognition, Translation, Production, and Unified Understanding.
+✅ A collection covering recognition, translation, production, retrieval and unified understanding.
 
 ✅ Extensive datasets and code links are provided.
 
@@ -84,7 +80,67 @@ Timeline of Sign Language works:
 
 <!-- ![Alt Text](fig/overview_3.png) -->
 
+## Verified additions: 2025–2026 <a id="verified-additions"></a>
+
+**Checked on 2026-11-19 · 25 papers newly added to this repository.** Titles and publication status were checked against publisher proceedings, ACL Anthology, CVF Open Access, ICLR proceedings or arXiv. This is a curated update, not an exhaustive search or a full audit of the older tables below.
+
+[BibTeX for these 25 papers](references_2026-11-19.bib) · [Update notes and corrections](UPDATES_2026-11-19.md)
+
+**Task key:** ISLR = isolated sign classification; CSLR = video-to-gloss recognition; SLT = sign-to-written-language translation; SLP = text/gloss-to-sign production. Text-to-gloss and sign retrieval are labelled separately. “Gloss-free” does not mean supervision-free or no external pretraining data.
+
+**Status key:** main conference, Findings and workshop papers are labelled separately. An arXiv link is not evidence of conference acceptance. “—” in the code column means no author-linked implementation was verified in this update, not that none exists.
+
+### Visual pretraining and efficient translation
+
+| Publication / status | Paper | Task | What to read it for | Verified code / resource |
+|---|---|---|---|---|
+| CVPR 2026 | [Learning Effective Sign Features without Text for Gloss-free Sign Language Translation](https://openaccess.thecvf.com/content/CVPR2026/html/Gan_Learning_Effective_Sign_Features_without_Text_for_Gloss-free_Sign_Language_CVPR_2026_paper.html) | SLT / pretraining | SignDINO learns sign-aware visual features without text during pretraining; downstream translation still uses text supervision. | — |
+| ACL 2025 | [SHuBERT: Self-Supervised Sign Language Representation Learning via Multi-Stream Cluster Prediction](https://aclanthology.org/2025.acl-long.1397/) | Representation learning | Masked cluster prediction over multiple articulator streams learns representations from unlabelled signing videos. | — |
+| Findings of ACL 2025 | [SignMusketeers: An Efficient Multi-Stream Approach for Sign Language Translation at Scale](https://aclanthology.org/2025.findings-acl.1157/) | SLT / efficiency | Combines face, hand and body streams with efficient self-supervised frame representations for translation at scale. | — |
+| ICCV Workshops 2025 | [SAGE: Segment-Aware Gloss-Free Encoding for Token-Efficient Sign Language Translation](https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Low_SAGE_Segment-Aware_Gloss-Free_Encoding_for_Token-Efficient_Sign_Language_Translation_ICCVW_2025_paper.html) | SLT / efficiency | Segment-aware visual encoding and token-level alignment reduce the visual token budget for translation. | — |
+| WSLP 2026 (workshop) | [TransAlign-SLT: Complementary Temporal and Semantic Supervision for Gloss-Free Sign Language Translation](https://aclanthology.org/2026.wslp-1.21/) | Gloss-free SLT | Combines auxiliary temporal supervision with training-time semantic alignment; the semantic branch is absent at inference. | — |
+| EMNLP 2025 | [PoseStitch-SLT: Linguistically Inspired Pose-Stitching for End-to-End Sign Language Translation](https://aclanthology.org/2025.emnlp-main.698/) | Pose-to-text SLT | Linguistically motivated pose stitching provides synthetic pretraining data; compare its pose-only setting separately from RGB systems. | — |
+
+### LLMs, retrieval, reinforcement learning and context
+
+| Publication / status | Paper | Task | What to read it for | Verified code / resource |
+|---|---|---|---|---|
+| arXiv 2026 — preprint | [SignRAG: Unified Retrieval-Augmented Gloss-Free Sign Language Translation](https://arxiv.org/abs/2610.11371) | Gloss-free SLT / retrieval | Combines hierarchical pretraining, a training-set retrieval gallery and retrieval-utility-guided reinforcement fine-tuning. | [Author resource](https://github.com/shahelaojieraozhi/SignRAG) |
+| Findings of EMNLP 2026 | [Attention-Steered Vision-Language Models for Sign Language Translation](https://aclanthology.org/2026.findings-emnlp.1435/) | SLT / VLM alignment | Steers spatial attention toward hands and faces and learns temporal frame selection with reinforcement learning. | — |
+| CVPR Findings 2026 | [RVLF: A Reinforcing Vision-Language Framework for Gloss-Free Sign Language Translation](https://openaccess.thecvf.com/content/CVPR2026F/html/Rao_FVLF_A_Reinforcing_Vision-Language_Framework_for_Gloss-Free_Sign_Language_Translation_CVPRF_2026_paper.html) | Gloss-free SLT / RL | RVLF combines RGB and skeleton features with supervised fine-tuning and reward-guided language generation. | — |
+| CVPR 2026 | [BoostSLT: Boosting Sign Language Translation via a Plug-and-Play Diffusion-Based Semantic Enhancer](https://openaccess.thecvf.com/content/CVPR2026/html/Han_BoostSLT_Boosting_Sign_Language_Translation_via_a_Plug-and-Play_Diffusion-Based_Semantic_CVPR_2026_paper.html) | SLT / long inputs | Uses temporal segmentation and diffusion-based semantic reconstruction as an enhancer for translation models. | [Author resource](https://github.com/K1sna/BoostSLT) |
+| Findings of ACL 2026 | [Can Small Vision–Language Models Perform Sign Language Translation?](https://aclanthology.org/2026.findings-acl.1609/) | SLT / small VLM evaluation | Evaluates adapted small vision-language models across sign languages, including semantic and entity-sensitive evaluation. | — |
+| WACV 2026 | [Large Sign Language Models: Toward 3D American Sign Language Translation](https://openaccess.thecvf.com/content/WACV2026/html/Zhang_Large_Sign_Language_Models_Toward_3D_American_Sign_Language_Translation_WACV_2026_paper.html) | 3D ASL-to-text SLT | Connects 3D signing representations to an instruction-guided language model; input modality differs from RGB-only SLT. | — |
+
+### Production, discourse and bidirectional modelling
+
+| Publication / status | Paper | Task | What to read it for | Verified code / resource |
+|---|---|---|---|---|
+| Findings of EMNLP 2026 | [SignFLIP: A Unified Model for Sign Language Translation and Generation via Stage-wise Alignment at Scale](https://aclanthology.org/2026.findings-emnlp.828/) | SLT + SLP | Stage-wise alignment supports translation and generation around a shared language model. | — |
+| arXiv 2026 — preprint | [SignGPT: Toward LLM-Mediated Sign Language Interaction through Gloss-Free Translation and Generation](https://arxiv.org/abs/2609.21709) | SLT + SLP | Uses part-aware pose representations and a shared language model for bidirectional sign-language interaction. | — |
+| EMNLP 2026 | [DiscoSign: Discourse-Aware Text to Sign Language Gloss Translation](https://aclanthology.org/2026.emnlp-main.183/) | Text-to-gloss | Models discourse phenomena such as spatial reference and consistent gloss choices; this is not video-to-text SLT. | — |
+| ICCV 2025 | [Signs as Tokens: A Retrieval-Enhanced Multilingual Sign Language Generator](https://openaccess.thecvf.com/content/ICCV2025/html/Zuo_Signs_as_Tokens_A_Retrieval-Enhanced_Multilingual_Sign_Language_Generator_ICCV_2025_paper.html) | Multilingual SLP / retrieval | Uses retrieved sign units as tokens for multilingual sign-language generation. | — |
+| arXiv 2026; BMVC 2026 acceptance reported by authors | [SignRR: Retrieve and Refine Real Motion for Sign Language Production](https://arxiv.org/abs/2608.28568) | SLP / retrieval | Retrieves real signing segments and refines the full motion sequence with a part-aware residual VQ-VAE. | — |
+| arXiv 2026 — preprint | [SemRAG: Semantic-Guided Sentence-Level Retrieval-Augmented Sign Language Production](https://arxiv.org/abs/2611.18189) | SLP / retrieval | Retrieves sentence-level motion templates and uses semantic guidance to localize and regenerate relevant motion. | — |
+
+### Datasets, multilingual learning and evaluation
+
+| Publication / status | Paper | Task | What to read it for | Verified code / resource |
+|---|---|---|---|---|
+| ACL 2026 | [CNSL-bench: Benchmarking the Sign Language Understanding Capabilities of MLLMs on Chinese National Sign Language](https://aclanthology.org/2026.acl-long.1896/) | Chinese SL understanding benchmark | Dictionary-grounded text, image and video tasks examine fine-grained sign understanding in multimodal language models. | [Author resource](https://github.com/rzhao-zhsq/CNSL-bench) |
+| NAACL 2025 | [FLEURS-ASL: Including American Sign Language in Massively Multilingual Multitask Evaluation](https://aclanthology.org/2025.naacl-long.314/) | ASL evaluation benchmark | Connects professionally interpreted ASL to multilingual text and speech resources for sentence and discourse evaluation. | — |
+| ICLR 2025 | [YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus](https://proceedings.iclr.cc/paper_files/paper/2025/file/cbbb65dc108e8ac2f82cba25bc5992fc-Paper-Conference.pdf) | Multilingual parallel corpus | Provides over 3,000 hours spanning over 25 sign languages; automatically collected captions require alignment and noise checks. | [Author resource](https://github.com/google-research/google-research/tree/master/youtube_sl_25) |
+| ACL 2025 (Short Papers) | [Multilingual Gloss-free Sign Language Translation: Towards Building a Sign Language Foundation Model](https://aclanthology.org/2025.acl-short.43/) | Multilingual gloss-free SLT | Studies translation across ten sign languages using a shared model and language-aware auxiliary supervision. | — |
+| Findings of EMNLP 2025 | [Rethinking Sign Language Translation: The Impact of Signer Dependence on Model Evaluation](https://aclanthology.org/2025.findings-emnlp.997/) | SLT / evaluation protocol | Shows substantial performance losses under signer-independent evaluation and examines recurring target sentences across splits. | — |
+| CVPR Workshops 2026 | [SignEval 2026 Challenge Results](https://openaccess.thecvf.com/content/CVPR2026W/MSLR/html/Hasanaath_SignEval_2026_Challenge_Results_CVPRW_2026_paper.html) | ISLR / CSLR challenge | Reports recognition challenge results for Saudi signing and Italian medical communication datasets; not an SLT leaderboard. | — |
+| CVPR Workshops 2026 | [Sign Language Recognition in the Age of LLMs](https://openaccess.thecvf.com/content/CVPR2026W/MSLR/html/Javorek_Sign_Language_Recognition_in_the_Age_of_LLMs_CVPRW_2026_paper.html) | ISLR / VLM evaluation | Compares language-model-based recognition with task-specific models, highlighting limitations of zero-shot sign classification. | — |
+
+**Reading cautions:** SignDINO here is Gan et al.'s CVPR 2026 paper; similarly named projects must not be assumed to be its code. The current CVF title for RVLF differs from the legacy `FVLF` filename in its page URL. SignRAG is retained as a preprint because its claimed future conference status was not independently verified. SignRR's BMVC 2026 acceptance is explicitly author-reported on arXiv. FLEURS-ASL's multilingual text/speech coverage does not imply hundreds of sign languages.
+
+**Comparing results:** record the split, signer overlap, duplicate target sentences, input modality, gloss supervision, external pretraining data and retrieval-gallery construction. Report ISLR accuracy, CSLR WER, SLT text/semantic metrics and SLP motion/comprehension measures separately. A better score in one paper is not evidence of superiority under unmatched training or evaluation conditions.
+
 ## 📖 Table of Contents
+- [Verified additions: 2025–2026](#verified-additions)
 - [📚 Sign Language Tasks and Methods](#methods-a-survey)
   - [Isolated Sign Recognition](#isolated-sign-recognition)
   - [Continuous Sign Recognition](#continuous-sign-recognition)
@@ -105,11 +161,12 @@ Timeline of Sign Language works:
   - ......
 - [💻 Others](#Others) 
 - [🖊️ Citation](#Citation)
-- [🐲 Contact](#Contact)
 
 ## 📚 Sign Language Tasks and Methods <a id="methods-a-survey"></a>
 
-### Isolated Sign Recognition 
+### Isolated Sign Recognition
+
+The older table also contains general-purpose video backbones used by sign-language systems; those are supporting methods, not dedicated sign-recognition benchmarks. Entries outside the dated update remain subject to verification.
 |   Time   |   Model Name    | Paper Title                                                                                                                                                                            |    Visual Encoder     |         Method          |                    Code/Project                    |    
 |:--------:|:---------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------:|:-----------------------:|:--------------------------------------------------:|
 | 2016.12  |     CNN-3D      | [3D Convolutional Neural Networks for Human Action Recognition](https://ieeexplore.ieee.org/document/6165309) (TPAMI)                                                                       |        3D CNN         |    Spatiotemporal       |                        N/A                         |
@@ -125,10 +182,7 @@ Timeline of Sign Language works:
 | 2022.03  |     BSL-1K      | [BSL-1K: Scaling up co-articulated sign language recognition using mouthing cues](https://arxiv.org/abs/2007.12131) (BMVC)                                  |        I3D            |    Multi-modal          |   [link](https://www.robots.ox.ac.uk/~vgg/data/bsl1k/)   |
 | 2022.06  |    VideoMAE     | [VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training](https://arxiv.org/abs/2203.12602) (NeurIPS) | ViT | Masked Autoencoder | [link](https://github.com/MCG-NJU/VideoMAE) |
 | 2023.03  |     SAM-SLR-v2         | [Sign Language Recognition via Skeleton-aware Multi-model Ensemble](https://arxiv.org/abs/2110.06161) (ICCV) | Multi-modal | Ensemble | [link](https://github.com/jackyjsy/SAM-SLR-v2) |
-| 2023.06  |   Con-SLT·    | [A Token-Level Contrastive Framework for Sign Language Translation](https://arxiv.org/pdf/2204.04916) (CVPR)                                                                    |      ResNet+BERT      |  Contrastive Learning   |   [link](https://github.com/biaofuxmu/ConSLT)  |
 | 2023.08  |   PiSLTRc       | [PiSLTRc: Position-informed Sign Language Transformer with Content-aware Convolution](https://arxiv.org/abs/2107.12600) (ICCV)                                                              |       ViT             |    Position-informed    |                        N/A                         |
-| 2024.05  |     TSPNet      | [TSPNet: Hierarchical Feature Learning via Temporal Semantic Pyramid for Sign Language Translation](https://papers.nips.cc/paper_files/paper/2020/file/8c00dee24c9878fea090ed070b44f1ab-Paper.pdf) (NeurIPS) |       3D CNN        |    Hierarchical         |   [link](https://github.com/verashira/TSPNet)     |
-| 2024.05  |   MSKA-SLR      | [Multi-Stream Keypoint Attention Network for Sign Language Recognition and Translation](https://arxiv.org/abs/2405.05672) (CVPR)                                                            |    Multi-stream       |   Keypoint Attention    |   [link](https://github.com/sutwangyan/MSKA)      |
 | 2024.07  |   Cross-lingual | [Cross-lingual few-shot sign language recognition](https://linkinghub.elsevier.com/retrieve/pii/S0031320324001250) (Pattern Recognition)                                                                     |    Cross-lingual      |     Few-shot Learning   |                        N/A                         |
 | 2024.08  |   Self-Attn-SLR | [A Static Sign Language Recognition Method Enhanced with Self-Attention Mechanisms](https://pubmed.ncbi.nlm.nih.gov/39517818/) (Sensors)                                                                 |      CNN+Self-Attn    |    Self-Attention       |                        N/A                         |
 
@@ -139,7 +193,7 @@ Timeline of Sign Language works:
 | 2015.12  |   HMM-based     | [Continuous Sign Language Recognition: Towards Large Vocabulary Statistical Recognition Systems Handling Multiple Signers](https://www.sciencedirect.com/science/article/pii/S1077314215002088) (CVIU) | Hand-crafted Features | HMM | N/A |
 | 2017.04  |   Hand-Action   | [First-Person Hand Action Benchmark with RGB-D Videosnd 3D Hand Pose Annotations](https://arxiv.org/abs/1704.02463) (CVPR)                                                               |     RGB-D+Pose       |         CTC             |                        N/A                         |
 | 2017.10  |   Egocentric    | [Egocentric Gesture Recognition Using Recurrent 3D Convolutional Neural Networks with Spatiotemporal Transformer Modules](https://ieeexplore.ieee.org/document/8237668/) (ICCV)           |      3D CNN           |    Spatiotemporal       |                        N/A                         |
-| 2018.04  |     SubUNets    | [SubUNets: End-to-end Hand Shape and Continuous Sign Language Recognition](https://openaccess.thecvf.com/content_iccv_2017/html/Camgoz_SubUNets_End-To-End_Hand_ICCV_2017_paper.html) (ICCV)|      CNN              |        CTC              |                        N/A                         |
+| 2017.10  |     SubUNets    | [SubUNets: End-to-end Hand Shape and Continuous Sign Language Recognition](https://openaccess.thecvf.com/content_iccv_2017/html/Camgoz_SubUNets_End-To-End_Hand_ICCV_2017_paper.html) (ICCV)|      CNN              |        CTC              |                        N/A                         |
 | 2018.09  |   CNN-LSTM      | [Neural Sign Language Translation](https://openaccess.thecvf.com/content_cvpr_2018/papers/Camgoz_Neural_Sign_Language_CVPR_2018_paper.pdf) (CVPR)                                          |        CNN            |         LSTM            |                        N/A                         |
 | 2019.06  |    Spatial-Temp | [Spatial-Temporal Multi-Cue Network for Continuous Sign Language Recognition](https://arxiv.org/abs/2002.03187) (AAAI)                                                |      3D CNN           |    Multi-cue Learning   |                        N/A                         |
 | 2020.02  |    Iterative    | [Iterative Alignment Network for Continuous Sign Language Recognition](https://openaccess.thecvf.com/content_CVPR_2019/papers/Pu_Iterative_Alignment_Network_for_Continuous_Sign_Language_Recognition_CVPR_2019_paper.pdf) (CVPR) | ResNet | Iterative CTC | N/A |
@@ -147,13 +201,15 @@ Timeline of Sign Language works:
 | 2021.03  |    VAC (CNN)    | [Visual Alignment Constraint for Continuous Sign Language Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Min_Visual_Alignment_Constraint_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.pdf) (ICCV)| CNN | CTC + Alignment | [link](https://github.com/ycmin95/VAC_CSLR) |
 | 2021.08  |     BN-TRN      | [Fully Convolutional Networks for Continuous Sign Language Recognition](https://arxiv.org/abs/2007.12402) (ECCV)                                              |      ResNet           |        FCN              |                        N/A                         |
 | 2021.10  |    CVT-SLR      | [CVT-SLR: Contrastive Visual-Textual Transformation for Sign Language Recognition with Variational Alignment](https://arxiv.org/abs/2303.05725) (CVPR) | ResNet+Transformer | Contrastive | N/A |
-| 2022.04  |    CorrNet      | [Continuous Sign Language Recognition with Correlation Network](https://openaccess.thecvf.com/content/CVPR2023/papers/Hu_Continuous_Sign_Language_Recognition_With_Correlation_Network_CVPR_2023_paper.pdf) (CVPR)                                      |    Multi-Features     |     Correlation         |                        N/A                         |
-| 2022.10  |     TwoStream-SLR | [Two-Stream Network for Sign Language Recognition and Translation](https://arxiv.org/abs/2211.01367) (CVPR) | RGB+Keypoint | Transformer | [link](https://github.com/FangyunWei/SLRT) |
-| 2023.06  |    C2SLR        | [C2SLR: Consistency-enhanced Continuous Sign Language Recognition](https://openaccess.thecvf.com/content/CVPR2023/papers/Zuo_C2SLR_Consistency-Enhanced_Continuous_Sign_Language_Recognition_CVPR_2023_paper.pdf) (CVPR) | ResNet | Consistency Learning | N/A |
-| 2024.02  |   TLP-CTC       | [Temporal Lift Pooling for Continuous Sign Language Recognition](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136950506.pdf) (ECCV)                                                                                    |      ResNet           |    Temporal Pooling     |                        [link](https://github.com/hulianyuyy/Temporal-Lift-Pooling)                         |
-| 2024.05  |    SMKD         | [Self-Mutual Distillation Learning for Continuous Sign Language Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Hao_Self-Mutual_Distillation_Learning_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.pdf) (ICCV)                                                                      |      ResNet           |  Knowledge Distillation |                        N/A                         |
+| 2023.06  |    CorrNet      | [Continuous Sign Language Recognition with Correlation Network](https://openaccess.thecvf.com/content/CVPR2023/papers/Hu_Continuous_Sign_Language_Recognition_With_Correlation_Network_CVPR_2023_paper.pdf) (CVPR)                                      |    Multi-Features     |     Correlation         |                        N/A                         |
+| 2022  |     TwoStream-SLR | [Two-Stream Network for Sign Language Recognition and Translation](https://proceedings.neurips.cc/paper_files/paper/2022/hash/6cd3ac24cdb789beeaa9f7145670fcae-Abstract-Conference.html) (NeurIPS) | RGB+Keypoint (S3D streams) | CTC | [link](https://github.com/FangyunWei/SLRT) |
+| 2022.06  |    C2SLR        | [C2SLR: Consistency-enhanced Continuous Sign Language Recognition](https://openaccess.thecvf.com/content/CVPR2022/papers/Zuo_C2SLR_Consistency-Enhanced_Continuous_Sign_Language_Recognition_CVPR_2022_paper.pdf) (CVPR) | ResNet | Consistency Learning | N/A |
+| 2022.10  |   TLP-CTC       | [Temporal Lift Pooling for Continuous Sign Language Recognition](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136950506.pdf) (ECCV)                                                                                    |      ResNet           |    Temporal Pooling     |                        [link](https://github.com/hulianyuyy/Temporal-Lift-Pooling)                         |
+| 2021.10  |    SMKD         | [Self-Mutual Distillation Learning for Continuous Sign Language Recognition](https://openaccess.thecvf.com/content/ICCV2021/papers/Hao_Self-Mutual_Distillation_Learning_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.pdf) (ICCV)                                                                      |      ResNet           |  Knowledge Distillation |                        N/A                         |
 | 2024.06  |  AdaBrowse      | [AdaBrowse: Adaptive Video Browser for Efficient Continuous Sign Language Recognition](https://dl.acm.org/doi/10.1145/3581783.3612269) (ACMMM)                                             |      CNN              |  Adaptive Browsing     |                        N/A                         |
 | 2024.08  |  Topic-Detection| [Topic Detection in Continuous Sign Language Videos](https://arxiv.org/abs/2408.15033) (arXiv)                                                                                               |      ResNet           |  Topic Modeling        |                        N/A                         |
+| 2025  |   MSKA-SLR      | [Multi-Stream Keypoint Attention Network for Sign Language Recognition and Translation](https://doi.org/10.1016/j.patcog.2025.111602) (Pattern Recognition)                                                            |    Multi-stream       |   Keypoint Attention    |   [link](https://github.com/sutwangyan/MSKA)      |
+
 
 ### Sign Language Translation
 |   Time   |   Model Name    | Paper Title                                                                                                                                                                            |    Visual Encoder     |         Language Model         |                    Code/Project                    |    
@@ -171,7 +227,7 @@ Timeline of Sign Language works:
 | 2023.06  |  Gloss-Attention| [Gloss Attention for Gloss-free Sign Language Translation](https://openaccess.thecvf.com/content/CVPR2023/papers/Yin_Gloss_Attention_for_Gloss-Free_Sign_Language_Translation_CVPR_2023_paper.pdf) (CVPR) | ResNet | Attention Mechanism | [link](https://github.com/YinAoXiong/GASLT) |
 | 2023.07  |   ISLTranslate  | [ISLTranslate: Dataset for Translating Indian Sign Language](https://aclanthology.org/2023.findings-acl.665/) (ACL)                                                                             |       CNN             |        Indian SL            |   [link](https://github.com/Exploration-Lab/ISLTranslate) |
 | 2023.10  |  Iterative-Pr   | [Sign Language Translation with Iterative Prototype](https://openaccess.thecvf.com/content/ICCV2023/papers/Yao_Sign_Language_Translation_with_Iterative_Prototype_ICCV_2023_paper.pdf) (ICCV) | ResNet | Iterative Learning | N/A |
-| 2024.02  |     Sign2GPT    | [Sign2GPT: Leveraging Large Language Models for Gloss-free Sign Language Translation](https://arxiv.org/abs/2405.04164) (arXiv)                                                              |      Video CNN        |            GPT                 |   [link](https://github.com/ryanwongsa/Sign2GPT) |
+| 2024  |     Sign2GPT    | [Sign2GPT: Leveraging Large Language Models for Gloss-free Sign Language Translation](https://openreview.net/forum?id=LqaEEs3UxU) (ICLR)                                                              | See paper | See paper |   [link](https://github.com/ryanwongsa/Sign2GPT) |
 | 2024.02  | Conditional-VAE | [Conditional Variational Autoencoder for Sign Language Translation with Cross-Modal Alignment](https://arxiv.org/abs/2312.15645) (AAAI)                               |       CNN             |            VAE                 |   [link](https://github.com/rzhao-zhsq/CV-SLT)    |
 | 2024.04  |  Sentence-Emb   | [Sign Language Translation with Sentence Embedding Supervision](https://aclanthology.org/2024.acl-short.40/) (ACL)                                                                          |      ResNet           |     Sentence Embedding     |                        [link](https://github.com/yhamidullah/sem-slt)                         |
 | 2024.05  |  XmDA           | [Cross-modality Data Augmentation for End-to-End Sign Language Translation](https://arxiv.org/abs/2305.11096) (arXiv)                                                                         |      ResNet           |     Cross-modal Augment     |                        [link](https://github.com/Atrewin/SignXmDA)                         |
@@ -183,12 +239,14 @@ Timeline of Sign Language works:
 | 2024.07  |  SignCL         | [Improving Gloss-free Sign Language Translation by Reducing Representation Density](https://proceedings.neurips.cc/paper_files/paper/2024/file/c225136cfe52a8fd66658bbcf9d894ab-Paper-Conference.pdf) (NeurIPS)                                                                         |      CLIP             |   Contrastive Learning       |   [link](https://github.com/JinhuiYE/SignCL)      |
 | 2024.09  |  Visual-Align   | [Visual Alignment Pretraining for Sign Language Translation](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05894.pdf) (ECCV)                                                                                        |      CLIP             |        Transformer             |                        N/A                         |
 | 2024.10  | Factorized-LLM  | [Factorized Learning Assisted by Large Language Model for Gloss-free Sign Language Translation](https://aclanthology.org/2024.lrec-main.620/) (LREC-COLING)                                       |       CNN             |           LLM                  |                        N/A                         |
-| 2024.11  |     GFSLT-VLP   | [Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhou_Gloss-Free_Sign_Language_Translation_Improving_from_Visual-Language_Pretraining_ICCV_2023_paper.pdf) (ICCV) | CLIP | mBART | [link](https://github.com/zhoubenjia/GFSLT-VLP) |
+| 2023.10  |     GFSLT-VLP   | [Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhou_Gloss-Free_Sign_Language_Translation_Improving_from_Visual-Language_Pretraining_ICCV_2023_paper.pdf) (ICCV) | CLIP | mBART | [link](https://github.com/zhoubenjia/GFSLT-VLP) |
 | 2024.11  |   Signformer    | [Signformer is all you need: Towards Edge AI for Sign Language](https://arxiv.org/abs/2411.12901) (arXiv)                                                                                     |      Efficient        |      Edge Computing         |   [link](https://github.com/EtaEnding/Signformer) |
 | 2024.12  | Scaling-SLT     | [Scaling Sign Language Translation](https://proceedings.neurips.cc/paper_files/paper/2024/file/ced76a666704e381c3039871ffe558ee-Paper-Conference.pdf) (NeurIPS)                                          |      Large-scale      |       Scaling Methods       |                        N/A                         |
 | 2025.01  |  Text-CTC-Align | [Improvement in Sign Language Translation Using Text CTC Alignment](https://aclanthology.org/2025.coling-main.219/) (COLING)                                                                   |      ResNet           |         CTC Alignment       |   N/A   |
 | 2025.03  |  Stochastic-Tr  | [Stochastic Transformer Networks with Linear Competing Units: Application to end-to-end SL Translation](https://ieeexplore.ieee.org/document/9709998/) (TPAMI)                               |      CNN              |    Stochastic Transformer   |                        [link](https://github.com/avoskou/Stochastic-Transformer-Networks-with-Linear-Competing-Units-Application-to-end-to-end-SL-Translatio/actions)                         |
-| 2025.03  | Lost-in-Context | [Lost in Translation, Found in Context: Sign Language Translation with Contextual Cues](https://arxiv.org/abs/2501.09754) (arXiv)                                                                    |       CNN             |      Contextual Learning    |        |
+| 2025.06  | Lost-in-Context | [Lost in Translation, Found in Context: Sign Language Translation with Contextual Cues](https://openaccess.thecvf.com/content/CVPR2025/html/Jang_Lost_in_Translation_Found_in_Context_Sign_Language_Translation_with_CVPR_2025_paper.html) (CVPR)                                                                    |       CNN             |      Contextual Learning    |        |
+| 2020  |     TSPNet      | [TSPNet: Hierarchical Feature Learning via Temporal Semantic Pyramid for Sign Language Translation](https://papers.nips.cc/paper_files/paper/2020/file/8c00dee24c9878fea090ed070b44f1ab-Paper.pdf) (NeurIPS) |       3D CNN        |    Hierarchical         |   [link](https://github.com/verashira/TSPNet)     |
+
 
 ### Sign Language Production
 |   Time   |   Model Name    | Paper Title                                                                                                                                                                            |    Generation Method     |         Architecture         |                    Code/Project                    |    
@@ -230,7 +288,7 @@ Timeline of Sign Language works:
 |   Time   |   Model Name    | Paper Title                                                                                                                                                                            |    Architecture     |         Tasks         |                    Code/Project                    |    
 |:--------:|:---------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------:|:---------------------:|:--------------------------------------------------:|
 | 2023.12  |   SignBERT+     | [SignBERT+: Hand-Model-Aware Self-Supervised Pre-training for Sign Language Understanding](https://www.computer.org/csdl/journal/tp/2023/09/10109128/1MESMCioCQM) (TPAMI)                                           |      BERT-like      | Recognition + Translation | [link](https://github.com/joshuasv/signbert_unofficial?tab=readme-ov-file) |
-| 2025.02  |    Uni-Sign     | [Uni-Sign: A Unified Framework for Sign Language Understanding](https://arxiv.org/abs/2501.15187) (ICLR)                                                                          | Unified Encoder | Recognition + Translation + Retrieval | [link](https://github.com/ZechengLi19/Uni-Sign) |
+| 2025  |    Uni-Sign     | [Uni-Sign: Toward Unified Sign Language Understanding at Scale](https://proceedings.iclr.cc/paper_files/paper/2025/hash/260a14acce2a89dad36adc8eefe7c59e-Abstract-Conference.html) (ICLR)                                                                          | Pose GCN + RGB fusion | ISLR + CSLR + SLT | [link](https://github.com/ZechengLi19/Uni-Sign) |
 | 2024.12  |   Multimodal    | [Scaling Up Multimodal Pretraining for Sign Language Understanding](https://arxiv.org/abs/2408.08544) (arXiv)                                                                                | Multimodal Pretraining | Cross-domain Transfer | N/A |
 
 ## 👨‍🏫 Large Language Models Meets Sign Language
@@ -238,7 +296,7 @@ Timeline of Sign Language works:
 ### LLM-driven Gloss-free Translation
 |   Time   |   Method    | Paper Title                                                                                                                                                                            |      Visual Encoder      |     LLM     |  Fine-tuning  |                      Code/Project                      |
 |:--------:|:-----------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------:|:-----------:|:-------------:|:------------------------------------------------------:|
-| 2024.02  |  Sign2GPT   | [Sign2GPT: Leveraging Large Language Models for Gloss-free Sign Language Translation](https://arxiv.org/abs/2405.04164) (arXiv)                                                              | Video CNN | GPT | Prompt Tuning | N/A |
+| 2024  |  Sign2GPT   | [Sign2GPT: Leveraging Large Language Models for Gloss-free Sign Language Translation](https://openreview.net/forum?id=LqaEEs3UxU) (ICLR)                                                              | See paper | See paper | See paper | [link](https://github.com/ryanwongsa/Sign2GPT) |
 | 2024.06  | LLMs-Good-SL| [LLMs are Good Sign Language Translators](https://arxiv.org/abs/2404.00925) (CVPR)                   | ViT | LLaMA/GPT | LoRA | N/A |
 | 2024.09  | Visual-Align| [Visual Alignment Pretraining for Sign Language Translation](https://eccv.ecva.net/virtual/2024/poster/737) (ECCV)                                                                                        | CLIP | Transformer | Frozen | N/A |
 | 2024.12 | LLaVA-SLT | LLaVA-SLT: Visual Language Tuning for Sign Language Translation (arXiv) | （DINOv2 ViT-B/14 — CLIP-style contrastive pre-training） | （Qwen-2.5-Instruct 3 B / 7 B / 14 B） | （视觉编码器与 LLM 全部 Frozen，仅两层 MLP 连接器可训练） | N/A | 
@@ -251,13 +309,13 @@ Timeline of Sign Language works:
 |   Time   |    Method    | Paper Title                                                                                                                                                                 |        Visual Encoder         |     LLM     |    Fine-tuning    |                     Code/Project                      |
 |:--------:|:------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------:|:-----------:|:-----------------:|:-----------------------------------------------------:|
 | 2023.12  | SignBERT+ | [SignBERT+: Hand-Model-Aware Self-Supervised Pre-training for Sign Language Understanding](https://www.computer.org/csdl/journal/tp/2023/09/10109128/1MESMCioCQM) (TPAMI) | Hand-aware CNN | BERT | Self-supervised | [link](https://github.com/YinAoXiong/SLRT_FET) |
-| 2025.02  |  Uni-Sign  | [Uni-Sign: A Unified Framework for Sign Language Understanding](https://arxiv.org/abs/2501.15187) (ICLR) | Unified Encoder | GPT-like | Multi-task | [link](https://github.com/ZechengLi19/Uni-Sign) |
+| 2025  |  Uni-Sign  | [Uni-Sign: Toward Unified Sign Language Understanding at Scale](https://proceedings.iclr.cc/paper_files/paper/2025/hash/260a14acce2a89dad36adc8eefe7c59e-Abstract-Conference.html) (ICLR) | Pose GCN + RGB fusion | mT5-Base | Multi-task | [link](https://github.com/ZechengLi19/Uni-Sign) |
 | 2024.12  | Multimodal-Pretraining | [Scaling Up Multimodal Pretraining for Sign Language Understanding](https://arxiv.org/abs/2408.08544) (arXiv) | Multimodal | Large Scale | Cross-domain | N/A |
 
 ### Visual-Language Alignment
 | **Time** |  **Method**   |                                                                             Paper Title                                                                              |             **Alignment Method**              |                              **Code**                              |
 |:--------:|:-------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------:|:------------------------------------------------------------------:|
-| 2024.09  |   GFSLT-VLP   | [Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhou_Gloss-Free_Sign_Language_Translation_Improving_from_Visual-Language_Pretraining_ICCV_2023_paper.pdf) (ICCV) | CLIP-style Pretraining | [link](https://github.com/joshuasv/signbert_unofficial?tab=readme-ov-file) |
+| 2023.10  |   GFSLT-VLP   | [Gloss-free Sign Language Translation: Improving from Visual-Language Pretraining](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhou_Gloss-Free_Sign_Language_Translation_Improving_from_Visual-Language_Pretraining_ICCV_2023_paper.pdf) (ICCV) | CLIP-style Pretraining | [link](https://github.com/zhoubenjia/GFSLT-VLP) |
 | 2024.06  |   CiCo-Cross  | [CiCo: Domain-Aware Sign Language Retrieval via Cross-Lingual Contrastive Learning](https://openaccess.thecvf.com/content/CVPR2023/papers/Hu_CiCo_Domain-Aware_Sign_Language_Retrieval_via_Cross-Lingual_Contrastive_Learning_CVPR_2023_paper.pdf) (CVPR) | Cross-lingual Contrastive | [link](https://github.com/FangyunWei/SLRT) |
 | 2024.12  |   Multimodal  | [Scaling Up Multimodal Pretraining for Sign Language Understanding](https://arxiv.org/abs/2408.08544) (arXiv) | Large-scale Multimodal | N/A |
 
@@ -402,8 +460,7 @@ Timeline of Sign Language works:
 ### Unified Understanding <a id="Dataset_4"></a>
 | **Dataset** | **Language** | **Tasks** | **Vocabulary Size** | **Number of Videos** | **Number of Signers** | **Modality** | **Data Source** | **Anno.** | **Link** |
 |-------------|-------------|-----------|--------------------:|---------------------:|----------------------:|--------------|-----------------|-----------|---------|
-| Uni-Sign Dataset(CSL News) | Multiple | Rec+Trans+Retr | —               | 100K videos         | —                     | RGB+Pose     | Multiple        | Manual    | [Link](https://github.com/ZechengLi19/Uni-Sign) |
-| SignBERT+ Dataset | ASL/BSL | Recognition+Translation | —         | 50K videos          | —                     | RGB+Hand     | Multiple        | Manual    | [Link](https://arxiv.org/pdf/2305.04868v1) |
+| CSL-News (Uni-Sign) | CSL | ISLR + CSLR + SLT pretraining | — | 1,985 hours (not a clip count) | — | RGB+Pose | TV news | See paper | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/260a14acce2a89dad36adc8eefe7c59e-Abstract-Conference.html) |
 
 
 
@@ -464,20 +521,21 @@ Timeline of Sign Language works:
 
 ## 🖊️ Citation <a id="Citation"></a>
 
-If you find our survey and repository useful for your research, please consider citing our paper:
+To cite this repository (not a published survey paper):
 
 ```bibtex
-@misc{awesome_sign_language_2024,
-      title={Awesome Sign Language: A Comprehensive Survey}, 
-      author={Sign Language Research Community},
-      year={2024},
-      url={https://github.com/ZechengLi19/Awesome-Sign-Language}, 
+@misc{jim3503_awesome_sign_2026,
+      title={Awesome Sign Language: Research Papers, Datasets, and Resources},
+      author={{Jim3503}},
+      year={2026},
+      howpublished={GitHub repository},
+      url={https://github.com/Jim3503/Awesome_Sign}
 }
 ```
 
 ## 🙏 Acknowledgments
 
-This comprehensive survey is built upon and inspired by the excellent work from the [Awesome-Sign-Language](https://github.com/ZechengLi19/Awesome-Sign-Language) GitHub repository. We gratefully acknowledge the contributions of the sign language research community in maintaining and updating the literature collections.
+This research collection is built upon and inspired by the excellent work from the [Awesome-Sign-Language](https://github.com/ZechengLi19/Awesome-Sign-Language) GitHub repository. We gratefully acknowledge the contributions of the sign language research community in maintaining and updating the literature collections.
 
 Special thanks to:
 - **ZechengLi19** and contributors for the [Awesome-Sign-Language](https://github.com/ZechengLi19/Awesome-Sign-Language) repository
